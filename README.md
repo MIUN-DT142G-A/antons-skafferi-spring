@@ -51,3 +51,6 @@ docker push ndrs03/webbserver
 This will upload the image to dockerhub. You will need collaborator permissions to the repository to push.
 
 If any changes are made to the sql files or compose, update the files in GitHub.
+
+
+small test
