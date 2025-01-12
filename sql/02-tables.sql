@@ -154,7 +154,7 @@ CREATE TABLE food_order
     id        INT AUTO_INCREMENT NOT NULL,
     dinner_id INT                NOT NULL,
     order_id  INT                NOT NULL,
-    quantity  INT                NOT NULL DEFAULT 1,
+    note      TEXT,
     PRIMARY KEY (id),
     FOREIGN KEY (dinner_id) REFERENCES dinner (dinner_id),
     FOREIGN KEY (order_id) REFERENCES orders (order_id)

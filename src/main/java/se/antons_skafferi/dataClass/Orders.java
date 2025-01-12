@@ -21,7 +21,7 @@ public class Orders {
     private Integer tab_id;
     private String note;
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
     private List<FoodOrder> foodOrders;
 

@@ -236,16 +236,10 @@ public class DatabaseService {
         Dinner dinner = dinnerRepository.findById(dinnerId)
                 .orElseThrow(() -> new IllegalArgumentException("Invalid dinner ID"));
 
-        Optional<FoodOrder> optionalFoodOrder = foodOrderRepository.findByOrderAndDinner(order, dinner);
-        FoodOrder foodOrder = optionalFoodOrder.orElseGet(() -> {
-            FoodOrder newFoodOrder = new FoodOrder();
-            newFoodOrder.setOrder(order);
-            newFoodOrder.setDinner(dinner);
-            newFoodOrder.setQuantity(0);
-            return newFoodOrder;
-        });
+        FoodOrder foodOrder = new FoodOrder();
+        foodOrder.setOrder(order);
+        foodOrder.setDinner(dinner);
 
-        foodOrder.setQuantity(foodOrder.getQuantity() + 1);
         foodOrderRepository.save(foodOrder);
 
         return orderRepository.save(order);
@@ -293,21 +287,10 @@ public class DatabaseService {
         orderRepository.delete(order);
     }
 
-    public void deleteMenuItemFromOrder(int orderId, Integer dinnerId) {
-        Orders order = orderRepository.findById(orderId)
-                .orElseThrow(() -> new IllegalArgumentException("Invalid order ID"));
-        Dinner dinner = dinnerRepository.findById(dinnerId)
-                .orElseThrow(() -> new IllegalArgumentException("Invalid dinner ID"));
-
-        FoodOrder foodOrder = foodOrderRepository.findByOrderAndDinner(order, dinner)
-                .orElseThrow(() -> new IllegalArgumentException("Invalid food order"));
-
-        if (foodOrder.getQuantity() == 1) {
-            foodOrderRepository.delete(foodOrder);
-        } else {
-            foodOrder.setQuantity(foodOrder.getQuantity() - 1);
-            foodOrderRepository.save(foodOrder);
-        }
+    public void deleteMenuItemFromOrder(int foodOrderId) {
+        FoodOrder foodOrder = foodOrderRepository.findById(foodOrderId)
+                .orElseThrow(() -> new IllegalArgumentException("Invalid food order ID"));
+        foodOrderRepository.delete(foodOrder);
     }
 
     public void deleteDrinkFromOrder(int orderId, Integer drinkId) {

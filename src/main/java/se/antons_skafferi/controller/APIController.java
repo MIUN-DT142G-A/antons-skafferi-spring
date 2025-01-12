@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import se.antons_skafferi.dataClass.*;
 import se.antons_skafferi.service.DatabaseService;
 import se.antons_skafferi.repository.PersonRepository;
@@ -267,10 +268,10 @@ public class APIController {
     public void deleteOrder(@PathVariable int orderId) {
         databaseService.deleteOrder(orderId);
     }
-    @DeleteMapping(path="/orders/{orderId}/menu-item/{dinnerId}/delete")
-    public Orders deleteMenuItemFromOrder(@PathVariable int orderId, @PathVariable int dinnerId) {
-        databaseService.deleteMenuItemFromOrder(orderId, dinnerId);
-        return databaseService.getOrdersById(orderId);
+
+    @DeleteMapping(path="/orders/menu-item/{foodOrderId}/delete")
+    public void deleteMenuItemFromOrder(@PathVariable int foodOrderId) {
+        databaseService.deleteMenuItemFromOrder(foodOrderId);
     }
 
     @DeleteMapping(path="/orders/{orderId}/drink/{drinkId}/delete")
@@ -378,6 +379,7 @@ public class APIController {
 
     // Employees    ############################################################
     // GET -----------------
+    @CrossOrigin(origins = "http://localhost:63343")
     @GetMapping(path="/employees/all")
     public List<Employee> getAllEmployees() {
         return databaseService.getAllEmployees();

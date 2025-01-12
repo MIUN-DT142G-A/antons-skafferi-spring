@@ -8,18 +8,18 @@ import jakarta.persistence.*;
 public class FoodOrder {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private int id;
 
     @ManyToOne
-    @JoinColumn(name = "dinner_id", nullable = false)
-    private Dinner dinner;
-
-    @ManyToOne
-    @JoinColumn(name = "order_id", nullable = false)
+    @JoinColumn(name = "order_id")
     @JsonBackReference
     private Orders order;
 
-    private Integer quantity;
+    @ManyToOne
+    @JoinColumn(name = "dinner_id")
+    private Dinner dinner;
+
+    private String note;
 
     // Getters and setters
     public Integer getId() {
@@ -46,11 +46,7 @@ public class FoodOrder {
         this.order = order;
     }
 
-    public Integer getQuantity() {
-        return quantity;
-    }
+    public String getNote() {return note;}
 
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
-    }
+    public void setNote(String note) {this.note = note;}
 }
