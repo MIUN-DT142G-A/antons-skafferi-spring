@@ -34,6 +34,16 @@ public class APIController {
         return databaseService.getAllPersons();
     }
 
+    @GetMapping(path="/persons/email/{email}")
+    public Person getPersonByEmail(@PathVariable String email) {
+        return databaseService.getPersonByEmail(email);
+    }
+
+    @GetMapping(path="/persons/phone/{phoneNumber}")
+    public Person getPersonByPhoneNumber(@PathVariable String phoneNumber) {
+        return databaseService.getPersonByPhoneNumber(phoneNumber);
+    }
+
     // POST -----------------
     @PostMapping(path="/persons")
     public Person createPerson(@RequestBody Person person) {
@@ -142,7 +152,27 @@ public class APIController {
         return databaseService.getBookingsByWeekAndYear(week, year);
     }
 
+    @GetMapping(path="/bookings/confirmed/table/{tableId}/datetime/{dateTime}")
+    public ResponseEntity<?> getConfirmedBookingsByTableIdAndDateTime(@PathVariable Integer tableId, @PathVariable String dateTime) {
+        try {
+            Timestamp timestamp = Timestamp.valueOf(dateTime);
+            List<Bookings> bookings = databaseService.getConfirmedBookingsByTableIdAndDateTime(tableId, timestamp);
+            return ResponseEntity.ok(bookings);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
 
+    @GetMapping(path="/bookings/confirmed/{personId}/{date}")
+    public ResponseEntity<?> getConfirmedBookingByPersonIdAndDate(@PathVariable Integer personId, @PathVariable String date) {
+        try {
+            Timestamp timestamp = Timestamp.valueOf(date + " 00:00:00");
+            Bookings booking = databaseService.getConfirmedBookingByPersonIdAndDate(personId, timestamp);
+            return ResponseEntity.ok(booking);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        }
+    }
     // POST -----------------
 
     @PostMapping(path="/calendar/bookings")

@@ -57,8 +57,20 @@ public class DatabaseService {
     public List<Person> getAllPersons() {
         return personRepository.findAll();
     }
+
+    public Person getPersonByEmail(String email) {
+        return personRepository.findByEmail(email)
+                .orElseThrow(() -> new IllegalArgumentException("Invalid email"));
+    }
+
+    public Person getPersonByPhoneNumber(String phoneNumber) {
+        return personRepository.findByPhoneNumber(phoneNumber)
+                .orElseThrow(() -> new IllegalArgumentException("Invalid phone number"));
+    }
+
+
     // POST -----------------
-// DatabaseService.java
+
     public Person addPerson(Person person) {
         if (personRepository.existsByEmail(person.getEmail())) {
             throw new IllegalArgumentException("Invalid email: Email already exists");
@@ -134,6 +146,7 @@ public class DatabaseService {
 
 
     // BOOKINGS ############################################################
+    // GET -----------------
     public List<Bookings> getBookings() {
         return bookingRepository.findAll();
     }
@@ -141,10 +154,16 @@ public class DatabaseService {
     public List<Bookings> getBookingsByDate(Date date) {
         return bookingRepository.findByDate(date);
     }
+
     public List<Bookings> getBookingsByWeekAndYear(int week, int year) {
         return bookingRepository.findByWeekAndYear(week, year);
     }
 
+    public List<Bookings> getConfirmedBookingsByTableIdAndDateTime(Integer tableId, Timestamp dateTime) {
+        return bookingRepository.findConfirmedBookingsByTableIdAndDateTime(tableId, dateTime);
+    }
+
+    // POST -----------------
     public Bookings addBooking(Bookings booking) {
         return bookingRepository.save(booking);
     }
@@ -154,6 +173,12 @@ public class DatabaseService {
                 .orElseThrow(() -> new IllegalArgumentException("Invalid booking ID"));
         booking.setStatus(status);
         return bookingRepository.save(booking);
+    }
+
+    public Bookings getConfirmedBookingByPersonIdAndDate(Integer personId, Timestamp date) {
+        Date sqlDate = new Date(date.getTime());
+        return bookingRepository.findConfirmedBookingByPersonIdAndDate(personId, sqlDate)
+                .orElseThrow(() -> new IllegalArgumentException("No confirmed booking found for the given person ID and date"));
     }
 
 

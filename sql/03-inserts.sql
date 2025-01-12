@@ -120,19 +120,19 @@ INSERT INTO employee (hiring_date, salary, password, person_id, role_id) VALUES
 
 -- Insert lunches into lunch table
 INSERT INTO lunch (price, date)
-VALUES (120, '2024-12-13'),
-       (130, '2024-12-14'),
-       (125, '2024-12-15'),
-       (135, '2024-12-16'),
-       (140, '2024-12-17'),
-       (130, '2024-12-18'),
-       (145, '2024-12-19'),
-       (150, '2024-12-20'),
-       (140, '2024-12-21'),
-       (135, '2024-12-22'),
-       (150, '2024-12-23'),
-       (160, '2024-12-24'),
-       (165, '2024-12-25');
+VALUES (120, '2025-01-06'),
+       (130, '2025-01-07'),
+       (125, '2025-01-08'),
+       (135, '2025-01-09'),
+       (140, '2025-01-10'),
+       (130, '2025-01-11'),
+       (145, '2025-01-12'),
+       (150, '2025-01-13'),
+       (140, '2025-01-14'),
+       (135, '2025-01-15'),
+       (150, '2025-01-16'),
+       (160, '2025-01-17'),
+       (165, '2025-01-18');
 
 -- Insert items into items table
 INSERT INTO items (name, description) VALUES
@@ -203,43 +203,43 @@ INSERT INTO items (name, description) VALUES
 
 -- Insert items into lunch_items table
 INSERT INTO lunch_items (lunch_id, item_id) VALUES
--- December 13
+-- January 6
 (1, 1), (1, 2), (1, 3),
 
--- December 14
+-- January 7
 (2, 4), (2, 5), (2, 6),
 
--- December 15
+-- January 8
 (3, 7), (3, 8), (3, 9),
 
--- December 16
+-- January 9
 (4, 10), (4, 11), (4, 12),
 
--- December 17
+-- January 10
 (5, 13), (5, 14), (5, 15),
 
--- December 18
+-- January 11
 (6, 16), (6, 17), (6, 18),
 
--- December 19
+-- January 12
 (7, 19), (7, 20), (7, 21),
 
--- December 20
+-- January 13
 (8, 22), (8, 23), (8, 24),
 
--- December 21
+-- January 14
 (9, 25), (9, 26), (9, 27),
 
--- December 22
+-- January 15
 (10, 28), (10, 29), (10, 30),
 
--- December 23
+-- January 16
 (11, 31), (11, 32), (11, 33),
 
--- December 24
+-- January 17
 (12, 34), (12, 35), (12, 36),
 
--- December 25
+-- January 18
 (13, 37), (13, 38), (13, 39);
 -- Tables
 INSERT INTO tables (table_number, room_for_people) VALUES
@@ -253,12 +253,13 @@ INSERT INTO tables (table_number, room_for_people) VALUES
 
 -- Events
 INSERT INTO events (name, description, date, start_time, end_time) VALUES
-    ('Lucia Celebration', 'Celebrate Lucia with traditional songs and glögg.', '2024-12-14', '18:00:00', '20:00:00'),
-    ('Christmas Wine Tasting', 'Taste a selection of wines perfect for Christmas.', '2024-12-15', '19:00:00', '21:00:00'),
-    ('Christmas Market', 'Enjoy a festive market with local crafts and food.', '2024-12-16', '16:00:00', '20:00:00'),
-    ('Gingerbread House Workshop', 'Build and decorate your own gingerbread house.', '2024-12-17', '14:00:00', '17:00:00'),
-    ('Christmas Carol Concert', 'Join us for an evening of Christmas carols.', '2024-12-18', '18:00:00', '20:00:00'),
-    ('Holiday Cooking Class', 'Learn to cook traditional holiday dishes.', '2024-12-19', '17:00:00', '19:00:00'),
-    ('Santa\'s Grotto', 'Meet Santa and enjoy festive activities.', '2024-12-20', '10:00:00', '16:00:00'),
-    ('Christmas Movie Night', 'Watch classic Christmas movies with popcorn.', '2024-12-21', '18:00:00', '21:00:00'),
-    ('Christmas Eve Dinner', 'Enjoy a special Christmas Eve dinner.', '2024-12-24', '19:00:00', '22:00:00');
+    ('Julmarknad på Restaurangen', 'Upplev en härlig julmarknad med lokala delikatesser och hantverk.', '2025-01-06', '16:00:00', '21:00:00'),
+    ('Luciafirande', 'Fira Lucia med traditionell luciakör och glöggservering.', '2025-01-07', '18:00:00', '20:00:00'),
+    ('Vinprovning: Julens Smaker', 'Lär dig mer om viner som passar perfekt till julens rätter.', '2025-01-08', '19:00:00', '21:00:00'),
+    ('Julkörskonsert', 'Lyssna på en stämningsfull konsert med julsånger från lokala körer.', '2025-01-09', '17:30:00', '19:30:00'),
+    ('Familjedag med Julpyssel', 'Ta med familjen för en dag med julpyssel och aktiviteter för alla åldrar.', '2025-01-10', '12:00:00', '16:00:00'),
+    ('Julbordskväll', 'Njut av ett klassiskt julbord med alla svenska favoriter.', '2025-01-11', '18:00:00', '22:00:00'),
+    ('Filmkväll: Julklassiker', 'Se en klassisk julfilm med popcorn och mysig atmosfär.', '2025-01-12', '19:00:00', '21:30:00'),
+    ('Dans och Glöggkväll', 'Danskväll med liveband och glöggservering.', '2025-01-13', '20:00:00', '23:30:00'),
+    ('Uppesittarkväll', 'Spendera kvällen med julspel, lotter och fika.', '2025-01-14', '19:00:00', '23:00:00'),
+    ('Julaftonsfirande', 'Fira julafton med julmat, tomtebesök och trevlig stämning.', '2025-01-15', '12:00:00', '18:00:00');
