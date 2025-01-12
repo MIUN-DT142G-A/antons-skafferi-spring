@@ -8,7 +8,7 @@ import jakarta.persistence.*;
 public class FoodOrder {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @ManyToOne
     @JoinColumn(name = "order_id")
