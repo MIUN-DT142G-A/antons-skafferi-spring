@@ -1,0 +1,120 @@
+\hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository}{}\doxysection{se.\+antons\+\_\+skafferi.\+repository.\+Lunch\+Repository Interface Reference}
+\label{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository}\index{se.antons\_skafferi.repository.LunchRepository@{se.antons\_skafferi.repository.LunchRepository}}
+
+
+Inheritance diagram for se.\+antons\+\_\+skafferi.\+repository.\+Lunch\+Repository\+:
+% FIG 0
+
+
+Collaboration diagram for se.\+antons\+\_\+skafferi.\+repository.\+Lunch\+Repository\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} $>$ \mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository_a65243a9bcc41ea237fb7b3f544032777}{find\+All\+With\+Items}} ()
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} $>$ \mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository_ae9eedbdad487b3f2751b78ddf18b8102}{find\+By\+Date}} (Date date)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} $>$ \mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository_a8b604662585ba69cca62108f1a679d7d}{find\+By\+Week\+And\+Year}} (int week, int year)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxysubsection*{\mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository}{Lunch\+Repository}}}
+
+This interface is used to communicate with the database regarding lunch. 
+
+Definition at line 14 of file Lunch\+Repository.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository_a65243a9bcc41ea237fb7b3f544032777}\label{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository_a65243a9bcc41ea237fb7b3f544032777}} 
+\index{se.antons\_skafferi.repository.LunchRepository@{se.antons\_skafferi.repository.LunchRepository}!findAllWithItems@{findAllWithItems}}
+\index{findAllWithItems@{findAllWithItems}!se.antons\_skafferi.repository.LunchRepository@{se.antons\_skafferi.repository.LunchRepository}}
+\doxysubsubsection{\texorpdfstring{findAllWithItems()}{findAllWithItems()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}}$>$ se.\+antons\+\_\+skafferi.\+repository.\+Lunch\+Repository.\+find\+All\+With\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is used to find all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Lunch> }
+
+\end{DoxyCode}
+ List of all lunch. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository_ae9eedbdad487b3f2751b78ddf18b8102}\label{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository_ae9eedbdad487b3f2751b78ddf18b8102}} 
+\index{se.antons\_skafferi.repository.LunchRepository@{se.antons\_skafferi.repository.LunchRepository}!findByDate@{findByDate}}
+\index{findByDate@{findByDate}!se.antons\_skafferi.repository.LunchRepository@{se.antons\_skafferi.repository.LunchRepository}}
+\doxysubsubsection{\texorpdfstring{findByDate()}{findByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}}$>$ se.\+antons\+\_\+skafferi.\+repository.\+Lunch\+Repository.\+find\+By\+Date (\begin{DoxyParamCaption}\item[{Date}]{date }\end{DoxyParamCaption})}
+
+This method is used to find all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+ with a specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the lunch. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Lunch> }
+
+\end{DoxyCode}
+ List of all lunch with the specified date. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository_a8b604662585ba69cca62108f1a679d7d}\label{interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository_a8b604662585ba69cca62108f1a679d7d}} 
+\index{se.antons\_skafferi.repository.LunchRepository@{se.antons\_skafferi.repository.LunchRepository}!findByWeekAndYear@{findByWeekAndYear}}
+\index{findByWeekAndYear@{findByWeekAndYear}!se.antons\_skafferi.repository.LunchRepository@{se.antons\_skafferi.repository.LunchRepository}}
+\doxysubsubsection{\texorpdfstring{findByWeekAndYear()}{findByWeekAndYear()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}}$>$ se.\+antons\+\_\+skafferi.\+repository.\+Lunch\+Repository.\+find\+By\+Week\+And\+Year (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{int}]{year }\end{DoxyParamCaption})}
+
+This method is used to find all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+ with a specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{week }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{year }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em week} & The week of the lunch. \\
+\hline
+{\em year} & The year of the lunch. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Lunch> }
+
+\end{DoxyCode}
+ List of all lunch with the specified period. 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/se/antons\+\_\+skafferi/repository/\mbox{\hyperlink{_lunch_repository_8java}{Lunch\+Repository.\+java}}\end{DoxyCompactItemize}

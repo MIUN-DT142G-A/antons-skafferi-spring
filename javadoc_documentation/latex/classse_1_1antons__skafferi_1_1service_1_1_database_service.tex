@@ -1,0 +1,2393 @@
+\hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service}{}\doxysection{se.\+antons\+\_\+skafferi.\+service.\+Database\+Service Class Reference}
+\label{classse_1_1antons__skafferi_1_1service_1_1_database_service}\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1b1340e993205d207d6b77b18d87a741}{get\+All\+Persons}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_acf97745bd35f186d0aa6e783d0166805}{get\+Person\+By\+Email}} (String email)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa1d79335b563bef52a991d872d0f5ded}{get\+Person\+By\+Phone\+Number}} (String phone\+Number)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_ad8b71fb54f5ed9cc26b7b45b54b2d135}{add\+Person}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} person)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac0e077a0816dd8b3b79426480bd8359d}{delete\+Person}} (int person\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_addb62292839b3db29ec8002549f4e172}{get\+All\+Items}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a17bf43c18b73412d150808feed07048a}{add\+Item}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}} item)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a95b1add5f05390ae9a2746f6ab87458d}{delete\+Item}} (int item\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a4f0dd03688d51e536c3b3d11dc09326e}{get\+All\+Lunch\+Items}} ()
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1036e6ace1b564f62d4154b214c5d40e}{get\+Lunch\+Items\+By\+Date}} (Date date)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a84d67dc24fb6ed414e835ad38855cbe3}{get\+Lunch\+Items\+By\+Week\+And\+Year}} (int week, int year)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_afd4f8597b847ca3688b38b2ae7b3ed9c}{add\+Lunch\+Item}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} lunch)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac75cf2c351b25bcf68086e283826714a}{add\+Items\+To\+Lunch}} (Integer lunch\+Id, List$<$ Integer $>$ item\+Ids)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_af007604349a8a74bb716d7618ef294b1}{delete\+Lunch\+Item}} (int lunch\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a55449ed352c137273eb428e29ae95880}{get\+All\+Dinner\+Items}} ()
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_abf3f65bd3a0e406a7279f3fa6d41662d}{get\+Dinner\+Items\+By\+Type}} (String type)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_aea9636a99fa4365516a247a2ab6f9e4b}{add\+Dinner\+Item}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}} dinner)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a14d8a7ab03e2f604bfe9ca6b14fa3124}{delete\+Dinner\+Item}} (int dinner\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_af48c2f8899a7676e183e41a6e63aaeea}{get\+Bookings}} ()
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a904a2c759923919696537c3765a553ae}{get\+Bookings\+By\+Date}} (Date date)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0c28689f0b0bd41367776ee7c9389d69}{get\+Bookings\+By\+Week\+And\+Year}} (int week, int year)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1e9547ddd01aa86ad92e561a50c00aca}{get\+Confirmed\+Bookings\+By\+Table\+Id\+And\+Date\+Time}} (Integer table\+Id, Timestamp date\+Time)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_ace23e1caba8751dff20bb872ca8e4a1d}{add\+Booking}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} booking)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_ad1acc9d3f8a9faeca9673c894ed92443}{update\+Booking\+Status}} (Integer id, \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_bookings_1_1_status}{Bookings.\+Status}} status)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a45ff96bbd8ae8739f99580f240a3ed25}{get\+Confirmed\+Booking\+By\+Person\+Id\+And\+Date}} (Integer person\+Id, Timestamp date)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a2f688a85caf986b79bb30d5d2ff5b6a8}{delete\+Booking}} (int booking\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a09dce37b1a26d98c9722707eba1d6dfc}{get\+All\+Events}} ()
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a4ca569a7961e7c004ac3f669d915b107}{get\+Events\+By\+Week\+And\+Year}} (int week, int year)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8c43f1dcb3057890f5cfc9fe2514dc8c}{get\+Events\+By\+Date}} (Date date)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0105c642833144009eb3d29eaafc68c1}{add\+Event}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} event)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a659af7776e50af5241308225903fa65e}{delete\+Event}} (int event\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_aff01fa075520d0730bdc22df2e95d94e}{get\+All\+Orders}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a63ceae41c8b1951c25e660d91c9a39f1}{get\+Orders\+By\+Id}} (Integer id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a810a76a319b393b25ceb463b3ee1646d}{get\+Orders\+By\+Date}} (Date date)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7d703a549e9454e87673c9b6b1773f1a}{get\+Orders\+By\+Status}} (\mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_orders_1_1_status}{Orders.\+Status}} status)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a681663f45e431beb2542a7474821c1f8}{add\+Order}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} order)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7c11ea5ebb05d18ab181af60c902cb2f}{add\+Menu\+Item\+To\+Order}} (int order\+Id, Integer dinner\+Id)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_abb6d2210a10982eb6c39d84bc64987ce}{add\+Drink\+To\+Order}} (int order\+Id, Integer drink\+Id)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7520abd73b97806e388b0d84fee99c75}{update\+Order\+Status}} (int order\+Id, \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_orders_1_1_status}{Orders.\+Status}} status)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1c051e3df7c89273d746be4bb8dcd37e}{update\+Order\+Note}} (int order\+Id, String note)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a01c4cfa1096f5f2df8ba10c65de69d2b}{delete\+Order}} (int order\+Id)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a2d14668085d694621230b5273df521c4}{delete\+Menu\+Item\+From\+Order}} (int food\+Order\+Id)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1608ad43cded7b0c1b0d080bec19cf4d}{delete\+Drink\+From\+Order}} (int order\+Id, Integer drink\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a781efca9674de1f9630c1e7f52f77056}{get\+All\+Tabs}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a73d84fc698d9e078da6fadc0c14d3b0a}{get\+Tab\+By\+Id}} (Integer id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_afc91d067bcf5972c000b8a6562e8f2c4}{get\+Tab\+By\+Date}} (Timestamp date)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac9441a42035262b7358f56a732167c67}{get\+Tab\+By\+Status}} (\mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_tab_1_1_status}{Tab.\+Status}} status)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0fd692720f72ced68e5ecbd81032f67d}{get\+Tab\+By\+Table}} (Integer table)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa06da3df175c679b1347c2355c6b5c3f}{add\+Tab}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} tab)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a537c64ca2e0b943dbd39022cfbd922da}{update\+Tab\+Status}} (int tab\+Id, \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_tab_1_1_status}{Tab.\+Status}} status)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_affcb6eb397983dbe26479d0448119042}{delete\+Tab}} (int tab\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a3388a803a5346136a2628f4328e72fc0}{get\+All\+Drinks}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a5c1491ef9f8c74a4d18022572f36473b}{get\+Drink\+By\+Id}} (int id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a28385ae65a4fe9fc95d87bdec4540a88}{get\+Drinks\+By\+Type}} (String type)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa897214dd3966e099f505da385309424}{add\+Drink}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} drink)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac85ad40e980ef3f6dc9c8c9b912a5f8e}{update\+Drink\+Price}} (int drink\+Id, Integer price)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1464c3675feed73aae112f6fb05e192d}{delete\+Drink}} (int drink\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7f123a4323495361c86e6feb1f510163}{get\+All\+Tables}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8abb52f229dddfbf80290f626fa7b4ce}{get\+Table\+By\+Id}} (int id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a3af864e19a5632467aa92d1f3e8eee3d}{get\+Tables\+By\+Number\+Of\+Seats}} (int room\+\_\+for\+\_\+people)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a570e98ceb29b607c816860707665df73}{add\+Table}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} table)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0686f0ba559e1110c9cad2e90bea7460}{delete\+Table}} (int table\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a9b10d21b28bdb79776debd94d46f9432}{get\+All\+Employees}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8bb44bdd00b81db9e9afc6a96ebc0f5c}{get\+Employee\+By\+Id}} (int id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8f3571c7e80223069256210342499a45}{get\+Employees\+By\+Name}} (String name)
+\item 
+String \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_ab8547ff6e65f139cce013ed66b0805f0}{get\+Employee\+Password\+By\+Email}} (String email)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a791a92685dc3fc64cba9dec737fee446}{get\+Hierarchy\+By\+Employee\+Id}} (int employee\+\_\+id)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0d99999e81b37d86b10de6401d5050e4}{add\+Employee}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} employee)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a6d61776eb1933ba9d6074394c6235289}{update\+Employee\+Password}} (int employee\+Id, String password)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_acf320277e45f78b5d5320462410c3d59}{change\+Employee\+Role}} (int employee\+Id, int role\+Id)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_aeb6fb7c784fa0792f43e29408e9460d1}{delete\+Employee}} (int employee\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a9ae5345f73209e46c5d7e2dff499c109}{get\+All\+Roles}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_ad0db768afa2983a36cfc2dfcbc129416}{get\+Role\+By\+Id}} (int id)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a97b6a5af06c142c9dd8e27044b020da8}{add\+Role}} (\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} role)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_a103de7d7d8acc72e61ef5c5ae10aa048}{update\+Role\+Hierarchy}} (int role\+Id, Integer hierarchy\+Level)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa7834858d6a39e7aa1ffcb4af9a6ae57}{delete\+Role}} (int role\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxysubsection*{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1service_1_1_database_service}{Database\+Service}}}
+
+This class is used to communicate with the database by calling functions present in the repositories. 
+
+The class contains methods for getting, adding, updating and deleting data from the database and is the middleman between the repositories and the controller. 
+
+\begin{DoxySeeAlso}{See also}
+Booking\+Repository 
+
+Dinner\+Repository 
+
+Drink\+Order\+Repository 
+
+Drinks\+Repository 
+
+Employee\+Repository 
+
+Events\+Repository 
+
+Food\+Order\+Repository 
+
+Items\+Repository 
+
+Lunch\+Repository 
+
+Order\+Repository 
+
+Person\+Repository 
+
+Role\+Repository 
+
+Tables\+Repository 
+
+Tab\+Repository
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+2025-\/01-\/12 
+\end{DoxySince}
+
+
+Definition at line 40 of file Database\+Service.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_ace23e1caba8751dff20bb872ca8e4a1d}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_ace23e1caba8751dff20bb872ca8e4a1d}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addBooking@{addBooking}}
+\index{addBooking@{addBooking}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addBooking()}{addBooking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Booking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}}}]{booking }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{booking }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em booking} & The booking to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Bookings }
+
+\end{DoxyCode}
+ The booking. 
+\end{DoxyReturn}
+
+
+Definition at line 342 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_aea9636a99fa4365516a247a2ab6f9e4b}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_aea9636a99fa4365516a247a2ab6f9e4b}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addDinnerItem@{addDinnerItem}}
+\index{addDinnerItem@{addDinnerItem}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addDinnerItem()}{addDinnerItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Dinner\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}}}]{dinner }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dinner }
+
+\end{DoxyCode}
+ item. 
+\begin{DoxyParams}{Parameters}
+{\em dinner} & The dinner item to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Dinner }
+
+\end{DoxyCode}
+ The dinner item. 
+\end{DoxyReturn}
+
+
+Definition at line 277 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa897214dd3966e099f505da385309424}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa897214dd3966e099f505da385309424}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addDrink@{addDrink}}
+\index{addDrink@{addDrink}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addDrink()}{addDrink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Drink (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}}}]{drink }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{drink }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em drink} & The drink to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drinks }
+
+\end{DoxyCode}
+ The drink. 
+\end{DoxyReturn}
+
+
+Definition at line 746 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_abb6d2210a10982eb6c39d84bc64987ce}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_abb6d2210a10982eb6c39d84bc64987ce}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addDrinkToOrder@{addDrinkToOrder}}
+\index{addDrinkToOrder@{addDrinkToOrder}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addDrinkToOrder()}{addDrinkToOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Drink\+To\+Order (\begin{DoxyParamCaption}\item[{int}]{order\+Id,  }\item[{Integer}]{drink\+Id }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{drink }
+
+\end{DoxyCode}
+ to an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ . If the order ID or drink ID is invalid, an exception is thrown. Adds onto the quantity if the drink is already in the order. 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & The ID of the order. \\
+\hline
+{\em drink\+Id} & The ID of the drink. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ The order. 
+\end{DoxyReturn}
+
+
+Definition at line 521 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0d99999e81b37d86b10de6401d5050e4}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0d99999e81b37d86b10de6401d5050e4}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addEmployee@{addEmployee}}
+\index{addEmployee@{addEmployee}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addEmployee()}{addEmployee()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Employee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}}}]{employee }\end{DoxyParamCaption})}
+
+Method to add an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{employee }
+
+\end{DoxyCode}
+ . Checks if the person exists and if the person ID is already associated with an existing employee. If the person or role ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em employee} & The employee to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ The employee. 
+\end{DoxyReturn}
+
+
+Definition at line 892 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0105c642833144009eb3d29eaafc68c1}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0105c642833144009eb3d29eaafc68c1}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addEvent@{addEvent}}
+\index{addEvent@{addEvent}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addEvent()}{addEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}}}]{event }\end{DoxyParamCaption})}
+
+Method to add an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{event} }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Events }
+
+\end{DoxyCode}
+ The event. 
+\end{DoxyReturn}
+
+
+Definition at line 423 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a17bf43c18b73412d150808feed07048a}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a17bf43c18b73412d150808feed07048a}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addItem@{addItem}}
+\index{addItem@{addItem}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addItem()}{addItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}}}]{item }\end{DoxyParamCaption})}
+
+Method to add an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{item }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Items }
+
+\end{DoxyCode}
+ The item. 
+\end{DoxyReturn}
+
+
+Definition at line 154 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac75cf2c351b25bcf68086e283826714a}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac75cf2c351b25bcf68086e283826714a}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addItemsToLunch@{addItemsToLunch}}
+\index{addItemsToLunch@{addItemsToLunch}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addItemsToLunch()}{addItemsToLunch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Items\+To\+Lunch (\begin{DoxyParamCaption}\item[{Integer}]{lunch\+Id,  }\item[{List$<$ Integer $>$}]{item\+Ids }\end{DoxyParamCaption})}
+
+Method to add items to a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lunch }
+
+\end{DoxyCode}
+ item. Checks if the lunch item exists before adding items. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em lunch\+Id} & The ID of the lunch item. \\
+\hline
+{\em item\+Ids} & The IDs of the items to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+ The lunch item. 
+\end{DoxyReturn}
+
+
+Definition at line 220 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_afd4f8597b847ca3688b38b2ae7b3ed9c}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_afd4f8597b847ca3688b38b2ae7b3ed9c}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addLunchItem@{addLunchItem}}
+\index{addLunchItem@{addLunchItem}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addLunchItem()}{addLunchItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Lunch\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}}}]{lunch }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lunch }
+
+\end{DoxyCode}
+ item. 
+\begin{DoxyParams}{Parameters}
+{\em lunch} & The lunch item to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+ The lunch item. 
+\end{DoxyReturn}
+
+
+Definition at line 209 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7c11ea5ebb05d18ab181af60c902cb2f}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7c11ea5ebb05d18ab181af60c902cb2f}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addMenuItemToOrder@{addMenuItemToOrder}}
+\index{addMenuItemToOrder@{addMenuItemToOrder}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addMenuItemToOrder()}{addMenuItemToOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Menu\+Item\+To\+Order (\begin{DoxyParamCaption}\item[{int}]{order\+Id,  }\item[{Integer}]{dinner\+Id }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{menu item }
+
+\end{DoxyCode}
+ to an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ . If the order ID or dinner ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & The ID of the order. \\
+\hline
+{\em dinner\+Id} & The ID of the dinner item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ The order. 
+\end{DoxyReturn}
+
+
+Definition at line 498 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a681663f45e431beb2542a7474821c1f8}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a681663f45e431beb2542a7474821c1f8}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addOrder@{addOrder}}
+\index{addOrder@{addOrder}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addOrder()}{addOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}}}]{order }\end{DoxyParamCaption})}
+
+Method to add an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em order} & The order to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ The order. 
+\end{DoxyReturn}
+
+
+Definition at line 487 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_ad8b71fb54f5ed9cc26b7b45b54b2d135}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_ad8b71fb54f5ed9cc26b7b45b54b2d135}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addPerson@{addPerson}}
+\index{addPerson@{addPerson}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addPerson()}{addPerson()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Person (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}}}]{person }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{person }
+
+\end{DoxyCode}
+ . Checks both email and phone number to ensure they are unique and give the user a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em person} & The person to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ The person. Or if the email or phone number already exists, an exception is thrown. 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a97b6a5af06c142c9dd8e27044b020da8}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a97b6a5af06c142c9dd8e27044b020da8}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addRole@{addRole}}
+\index{addRole@{addRole}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addRole()}{addRole()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Role (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}}}]{role }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{role }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em role} & The role to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ The role. 
+\end{DoxyReturn}
+
+
+Definition at line 985 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa06da3df175c679b1347c2355c6b5c3f}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa06da3df175c679b1347c2355c6b5c3f}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addTab@{addTab}}
+\index{addTab@{addTab}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addTab()}{addTab()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}}]{tab }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tab }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em tab} & The tab to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ The tab. 
+\end{DoxyReturn}
+
+
+Definition at line 676 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a570e98ceb29b607c816860707665df73}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a570e98ceb29b607c816860707665df73}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!addTable@{addTable}}
+\index{addTable@{addTable}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{addTable()}{addTable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+add\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}}}]{table }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{table }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em table} & The table to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tables }
+
+\end{DoxyCode}
+ The table. 
+\end{DoxyReturn}
+
+
+Definition at line 816 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_acf320277e45f78b5d5320462410c3d59}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_acf320277e45f78b5d5320462410c3d59}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!changeEmployeeRole@{changeEmployeeRole}}
+\index{changeEmployeeRole@{changeEmployeeRole}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{changeEmployeeRole()}{changeEmployeeRole()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+change\+Employee\+Role (\begin{DoxyParamCaption}\item[{int}]{employee\+Id,  }\item[{int}]{role\+Id }\end{DoxyParamCaption})}
+
+Method to change the role of an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{employee }
+
+\end{DoxyCode}
+ . If the employee ID or role ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em employee\+Id} & The ID of the employee. \\
+\hline
+{\em role\+Id} & The ID of the role. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ The employee. 
+\end{DoxyReturn}
+
+
+Definition at line 932 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a2f688a85caf986b79bb30d5d2ff5b6a8}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a2f688a85caf986b79bb30d5d2ff5b6a8}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteBooking@{deleteBooking}}
+\index{deleteBooking@{deleteBooking}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteBooking()}{deleteBooking()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Booking (\begin{DoxyParamCaption}\item[{int}]{booking\+Id }\end{DoxyParamCaption})}
+
+Method to delete a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{booking }
+
+\end{DoxyCode}
+ . Has to check if the booking exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em booking\+Id} & The ID of the booking to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 378 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a14d8a7ab03e2f604bfe9ca6b14fa3124}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a14d8a7ab03e2f604bfe9ca6b14fa3124}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteDinnerItem@{deleteDinnerItem}}
+\index{deleteDinnerItem@{deleteDinnerItem}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteDinnerItem()}{deleteDinnerItem()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Dinner\+Item (\begin{DoxyParamCaption}\item[{int}]{dinner\+Id }\end{DoxyParamCaption})}
+
+Method to delete a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dinner }
+
+\end{DoxyCode}
+ item. Has to check if the dinner item exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em dinner\+Id} & The ID of the dinner item to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 287 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1464c3675feed73aae112f6fb05e192d}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1464c3675feed73aae112f6fb05e192d}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteDrink@{deleteDrink}}
+\index{deleteDrink@{deleteDrink}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteDrink()}{deleteDrink()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Drink (\begin{DoxyParamCaption}\item[{int}]{drink\+Id }\end{DoxyParamCaption})}
+
+Method to delete a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{drink }
+
+\end{DoxyCode}
+ . Has to check if the drink exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em drink\+Id} & The ID of the drink to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 770 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1608ad43cded7b0c1b0d080bec19cf4d}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1608ad43cded7b0c1b0d080bec19cf4d}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteDrinkFromOrder@{deleteDrinkFromOrder}}
+\index{deleteDrinkFromOrder@{deleteDrinkFromOrder}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteDrinkFromOrder()}{deleteDrinkFromOrder()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Drink\+From\+Order (\begin{DoxyParamCaption}\item[{int}]{order\+Id,  }\item[{Integer}]{drink\+Id }\end{DoxyParamCaption})}
+
+Method to delete a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{drink }
+
+\end{DoxyCode}
+ from an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ . If the order ID is invalid, an exception is thrown. If the drink is the last one in the order, the drink order is deleted. Else the quantity is decreased by one. 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & The ID of the order. \\
+\hline
+{\em drink\+Id} & The ID of the drink. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 601 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_aeb6fb7c784fa0792f43e29408e9460d1}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_aeb6fb7c784fa0792f43e29408e9460d1}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteEmployee@{deleteEmployee}}
+\index{deleteEmployee@{deleteEmployee}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteEmployee()}{deleteEmployee()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Employee (\begin{DoxyParamCaption}\item[{int}]{employee\+Id }\end{DoxyParamCaption})}
+
+Method to delete an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{employee }
+
+\end{DoxyCode}
+ . Has to check if the employee exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em employee\+Id} & The ID of the employee to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 948 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a659af7776e50af5241308225903fa65e}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a659af7776e50af5241308225903fa65e}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteEvent@{deleteEvent}}
+\index{deleteEvent@{deleteEvent}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteEvent()}{deleteEvent()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Event (\begin{DoxyParamCaption}\item[{int}]{event\+Id }\end{DoxyParamCaption})}
+
+Method to delete an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{event} }
+
+\end{DoxyCode}
+ . Has to check if the event exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em event\+Id} & The ID of the event to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 433 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a95b1add5f05390ae9a2746f6ab87458d}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a95b1add5f05390ae9a2746f6ab87458d}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteItem@{deleteItem}}
+\index{deleteItem@{deleteItem}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteItem()}{deleteItem()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Item (\begin{DoxyParamCaption}\item[{int}]{item\+Id }\end{DoxyParamCaption})}
+
+Method to delete an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{item }
+
+\end{DoxyCode}
+ . Has to check if the item exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The ID of the item to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 164 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_af007604349a8a74bb716d7618ef294b1}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_af007604349a8a74bb716d7618ef294b1}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteLunchItem@{deleteLunchItem}}
+\index{deleteLunchItem@{deleteLunchItem}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteLunchItem()}{deleteLunchItem()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Lunch\+Item (\begin{DoxyParamCaption}\item[{int}]{lunch\+Id }\end{DoxyParamCaption})}
+
+Method to delete a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lunch }
+
+\end{DoxyCode}
+ item. Has to check if the lunch item exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em lunch\+Id} & The ID of the lunch item to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 242 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a2d14668085d694621230b5273df521c4}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a2d14668085d694621230b5273df521c4}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteMenuItemFromOrder@{deleteMenuItemFromOrder}}
+\index{deleteMenuItemFromOrder@{deleteMenuItemFromOrder}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteMenuItemFromOrder()}{deleteMenuItemFromOrder()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Menu\+Item\+From\+Order (\begin{DoxyParamCaption}\item[{int}]{food\+Order\+Id }\end{DoxyParamCaption})}
+
+Method to delete a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{menu item }
+
+\end{DoxyCode}
+ from an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ . If the order ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em food\+Order\+Id} & The ID of the food order. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 587 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a01c4cfa1096f5f2df8ba10c65de69d2b}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a01c4cfa1096f5f2df8ba10c65de69d2b}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteOrder@{deleteOrder}}
+\index{deleteOrder@{deleteOrder}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteOrder()}{deleteOrder()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Order (\begin{DoxyParamCaption}\item[{int}]{order\+Id }\end{DoxyParamCaption})}
+
+Method to delete an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ . Has to check if the order exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & The ID of the order to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 576 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac0e077a0816dd8b3b79426480bd8359d}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac0e077a0816dd8b3b79426480bd8359d}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deletePerson@{deletePerson}}
+\index{deletePerson@{deletePerson}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deletePerson()}{deletePerson()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Person (\begin{DoxyParamCaption}\item[{int}]{person\+Id }\end{DoxyParamCaption})}
+
+Method to delete a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{person }
+
+\end{DoxyCode}
+ . Has to check if the person exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em person\+Id} & The ID of the person to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 128 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa7834858d6a39e7aa1ffcb4af9a6ae57}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa7834858d6a39e7aa1ffcb4af9a6ae57}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteRole@{deleteRole}}
+\index{deleteRole@{deleteRole}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteRole()}{deleteRole()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Role (\begin{DoxyParamCaption}\item[{int}]{role\+Id }\end{DoxyParamCaption})}
+
+Method to delete a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{role }
+
+\end{DoxyCode}
+ . Has to check if the role exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em role\+Id} & The ID of the role to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1009 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_affcb6eb397983dbe26479d0448119042}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_affcb6eb397983dbe26479d0448119042}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteTab@{deleteTab}}
+\index{deleteTab@{deleteTab}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteTab()}{deleteTab()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Tab (\begin{DoxyParamCaption}\item[{int}]{tab\+Id }\end{DoxyParamCaption})}
+
+Method to delete a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tab }
+
+\end{DoxyCode}
+ . Has to check if the tab exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em tab\+Id} & The ID of the tab to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 700 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0686f0ba559e1110c9cad2e90bea7460}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0686f0ba559e1110c9cad2e90bea7460}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!deleteTable@{deleteTable}}
+\index{deleteTable@{deleteTable}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{deleteTable()}{deleteTable()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+delete\+Table (\begin{DoxyParamCaption}\item[{int}]{table\+Id }\end{DoxyParamCaption})}
+
+Method to delete a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{table }
+
+\end{DoxyCode}
+ . Has to check if the table exists before deleting. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em table\+Id} & The ID of the table to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 826 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a55449ed352c137273eb428e29ae95880}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a55449ed352c137273eb428e29ae95880}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getAllDinnerItems@{getAllDinnerItems}}
+\index{getAllDinnerItems@{getAllDinnerItems}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getAllDinnerItems()}{getAllDinnerItems()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+All\+Dinner\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dinner }
+
+\end{DoxyCode}
+ items. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Dinner> }
+
+\end{DoxyCode}
+ List of all dinner items. 
+\end{DoxyReturn}
+
+
+Definition at line 258 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a3388a803a5346136a2628f4328e72fc0}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a3388a803a5346136a2628f4328e72fc0}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getAllDrinks@{getAllDrinks}}
+\index{getAllDrinks@{getAllDrinks}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getAllDrinks()}{getAllDrinks()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+All\+Drinks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{drinks }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Drinks> }
+
+\end{DoxyCode}
+ List of all drinks. 
+\end{DoxyReturn}
+
+
+Definition at line 716 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a9b10d21b28bdb79776debd94d46f9432}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a9b10d21b28bdb79776debd94d46f9432}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getAllEmployees@{getAllEmployees}}
+\index{getAllEmployees@{getAllEmployees}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getAllEmployees()}{getAllEmployees()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+All\+Employees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{employees }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Employee> }
+
+\end{DoxyCode}
+ List of all employees. 
+\end{DoxyReturn}
+
+
+Definition at line 842 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a09dce37b1a26d98c9722707eba1d6dfc}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a09dce37b1a26d98c9722707eba1d6dfc}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getAllEvents@{getAllEvents}}
+\index{getAllEvents@{getAllEvents}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getAllEvents()}{getAllEvents()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+All\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{events }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Events> }
+
+\end{DoxyCode}
+ List of all events. 
+\end{DoxyReturn}
+
+
+Definition at line 394 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_addb62292839b3db29ec8002549f4e172}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_addb62292839b3db29ec8002549f4e172}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getAllItems@{getAllItems}}
+\index{getAllItems@{getAllItems}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getAllItems()}{getAllItems()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+All\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{items }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Items> }
+
+\end{DoxyCode}
+ List of all items. 
+\end{DoxyReturn}
+
+
+Definition at line 144 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a4f0dd03688d51e536c3b3d11dc09326e}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a4f0dd03688d51e536c3b3d11dc09326e}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getAllLunchItems@{getAllLunchItems}}
+\index{getAllLunchItems@{getAllLunchItems}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getAllLunchItems()}{getAllLunchItems()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+All\+Lunch\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lunch }
+
+\end{DoxyCode}
+ items. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Lunch> }
+
+\end{DoxyCode}
+ List of all lunch items. 
+\end{DoxyReturn}
+
+
+Definition at line 180 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_aff01fa075520d0730bdc22df2e95d94e}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_aff01fa075520d0730bdc22df2e95d94e}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getAllOrders@{getAllOrders}}
+\index{getAllOrders@{getAllOrders}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getAllOrders()}{getAllOrders()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+All\+Orders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{orders }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Orders> }
+
+\end{DoxyCode}
+ List of all orders. 
+\end{DoxyReturn}
+
+
+Definition at line 448 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1b1340e993205d207d6b77b18d87a741}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1b1340e993205d207d6b77b18d87a741}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getAllPersons@{getAllPersons}}
+\index{getAllPersons@{getAllPersons}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getAllPersons()}{getAllPersons()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+All\+Persons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{persons }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Person> }
+
+\end{DoxyCode}
+ List of all persons. 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a9ae5345f73209e46c5d7e2dff499c109}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a9ae5345f73209e46c5d7e2dff499c109}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getAllRoles@{getAllRoles}}
+\index{getAllRoles@{getAllRoles}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getAllRoles()}{getAllRoles()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+All\+Roles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{roles }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Role> }
+
+\end{DoxyCode}
+ List of all roles. 
+\end{DoxyReturn}
+
+
+Definition at line 964 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7f123a4323495361c86e6feb1f510163}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7f123a4323495361c86e6feb1f510163}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getAllTables@{getAllTables}}
+\index{getAllTables@{getAllTables}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getAllTables()}{getAllTables()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+All\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tables }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tables> }
+
+\end{DoxyCode}
+ List of all tables. 
+\end{DoxyReturn}
+
+
+Definition at line 786 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a781efca9674de1f9630c1e7f52f77056}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a781efca9674de1f9630c1e7f52f77056}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getAllTabs@{getAllTabs}}
+\index{getAllTabs@{getAllTabs}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getAllTabs()}{getAllTabs()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+All\+Tabs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tabs }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tab> }
+
+\end{DoxyCode}
+ List of all tabs. 
+\end{DoxyReturn}
+
+
+Definition at line 628 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_af48c2f8899a7676e183e41a6e63aaeea}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_af48c2f8899a7676e183e41a6e63aaeea}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getBookings@{getBookings}}
+\index{getBookings@{getBookings}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getBookings()}{getBookings()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Bookings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{bookings }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Bookings> }
+
+\end{DoxyCode}
+ List of all bookings. 
+\end{DoxyReturn}
+
+
+Definition at line 303 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a904a2c759923919696537c3765a553ae}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a904a2c759923919696537c3765a553ae}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getBookingsByDate@{getBookingsByDate}}
+\index{getBookingsByDate@{getBookingsByDate}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getBookingsByDate()}{getBookingsByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Bookings\+By\+Date (\begin{DoxyParamCaption}\item[{Date}]{date }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{booking }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The Date of the booking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Bookings> }
+
+\end{DoxyCode}
+ The bookings with the specified date. 
+\end{DoxyReturn}
+
+
+Definition at line 312 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0c28689f0b0bd41367776ee7c9389d69}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0c28689f0b0bd41367776ee7c9389d69}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getBookingsByWeekAndYear@{getBookingsByWeekAndYear}}
+\index{getBookingsByWeekAndYear@{getBookingsByWeekAndYear}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getBookingsByWeekAndYear()}{getBookingsByWeekAndYear()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Bookings\+By\+Week\+And\+Year (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{int}]{year }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{booking }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{week }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{year }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em week} & The week of the booking. \\
+\hline
+{\em year} & The year of the booking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Bookings> }
+
+\end{DoxyCode}
+ The bookings with the specified status. 
+\end{DoxyReturn}
+
+
+Definition at line 322 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a45ff96bbd8ae8739f99580f240a3ed25}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a45ff96bbd8ae8739f99580f240a3ed25}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getConfirmedBookingByPersonIdAndDate@{getConfirmedBookingByPersonIdAndDate}}
+\index{getConfirmedBookingByPersonIdAndDate@{getConfirmedBookingByPersonIdAndDate}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getConfirmedBookingByPersonIdAndDate()}{getConfirmedBookingByPersonIdAndDate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Confirmed\+Booking\+By\+Person\+Id\+And\+Date (\begin{DoxyParamCaption}\item[{Integer}]{person\+Id,  }\item[{Timestamp}]{date }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{booking }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{personId }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{date }
+
+\end{DoxyCode}
+ . It checks if it is flagged as \textquotesingle{}Confirmed\textquotesingle{}. 
+\begin{DoxyParams}{Parameters}
+{\em person\+Id} & The person id of the booking. \\
+\hline
+{\em date} & The date of the booking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Bookings }
+
+\end{DoxyCode}
+ The booking. 
+\end{DoxyReturn}
+
+
+Definition at line 366 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1e9547ddd01aa86ad92e561a50c00aca}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1e9547ddd01aa86ad92e561a50c00aca}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getConfirmedBookingsByTableIdAndDateTime@{getConfirmedBookingsByTableIdAndDateTime}}
+\index{getConfirmedBookingsByTableIdAndDateTime@{getConfirmedBookingsByTableIdAndDateTime}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getConfirmedBookingsByTableIdAndDateTime()}{getConfirmedBookingsByTableIdAndDateTime()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Confirmed\+Bookings\+By\+Table\+Id\+And\+Date\+Time (\begin{DoxyParamCaption}\item[{Integer}]{table\+Id,  }\item[{Timestamp}]{date\+Time }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{booking }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{status }
+
+\end{DoxyCode}
+ . It checks if it is flagged as \textquotesingle{}Confirmed\textquotesingle{}. 
+\begin{DoxyParams}{Parameters}
+{\em table\+Id} & The table id the person is booking at. \\
+\hline
+{\em date\+Time} & The date and time of the booking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Bookings> }
+
+\end{DoxyCode}
+ The bookings with the specified status. 
+\end{DoxyReturn}
+
+
+Definition at line 332 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_abf3f65bd3a0e406a7279f3fa6d41662d}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_abf3f65bd3a0e406a7279f3fa6d41662d}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getDinnerItemsByType@{getDinnerItemsByType}}
+\index{getDinnerItemsByType@{getDinnerItemsByType}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getDinnerItemsByType()}{getDinnerItemsByType()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Dinner\+Items\+By\+Type (\begin{DoxyParamCaption}\item[{String}]{type }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dinner }
+
+\end{DoxyCode}
+ items by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{type }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the dinner items. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Dinner> }
+
+\end{DoxyCode}
+ List of all dinner items. 
+\end{DoxyReturn}
+
+
+Definition at line 267 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a5c1491ef9f8c74a4d18022572f36473b}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a5c1491ef9f8c74a4d18022572f36473b}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getDrinkById@{getDrinkById}}
+\index{getDrinkById@{getDrinkById}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getDrinkById()}{getDrinkById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Drink\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{drink }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{id} }
+
+\end{DoxyCode}
+ . If the ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the drink. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drinks }
+
+\end{DoxyCode}
+ The drink. 
+\end{DoxyReturn}
+
+
+Definition at line 726 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a28385ae65a4fe9fc95d87bdec4540a88}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a28385ae65a4fe9fc95d87bdec4540a88}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getDrinksByType@{getDrinksByType}}
+\index{getDrinksByType@{getDrinksByType}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getDrinksByType()}{getDrinksByType()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Drinks\+By\+Type (\begin{DoxyParamCaption}\item[{String}]{type }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{drink }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{type }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the drink. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Drinks> }
+
+\end{DoxyCode}
+ The drinks with the specified type. 
+\end{DoxyReturn}
+
+
+Definition at line 736 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8bb44bdd00b81db9e9afc6a96ebc0f5c}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8bb44bdd00b81db9e9afc6a96ebc0f5c}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getEmployeeById@{getEmployeeById}}
+\index{getEmployeeById@{getEmployeeById}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getEmployeeById()}{getEmployeeById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Employee\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{employee }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{id} }
+
+\end{DoxyCode}
+ . If the ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the employee. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ The employee. 
+\end{DoxyReturn}
+
+
+Definition at line 852 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_ab8547ff6e65f139cce013ed66b0805f0}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_ab8547ff6e65f139cce013ed66b0805f0}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getEmployeePasswordByEmail@{getEmployeePasswordByEmail}}
+\index{getEmployeePasswordByEmail@{getEmployeePasswordByEmail}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getEmployeePasswordByEmail()}{getEmployeePasswordByEmail()}}
+{\footnotesize\ttfamily String se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Employee\+Password\+By\+Email (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+Method to get the password of the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ by asking using
+\begin{DoxyCode}{0}
+\DoxyCodeLine{email }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em email} & The email of the employee. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{String }
+
+\end{DoxyCode}
+ The password string of the employee. 
+\end{DoxyReturn}
+
+
+Definition at line 871 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8f3571c7e80223069256210342499a45}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8f3571c7e80223069256210342499a45}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getEmployeesByName@{getEmployeesByName}}
+\index{getEmployeesByName@{getEmployeesByName}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getEmployeesByName()}{getEmployeesByName()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Employees\+By\+Name (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{employee }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{name }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the employee. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Employee> }
+
+\end{DoxyCode}
+ The employees with the specified name. 
+\end{DoxyReturn}
+
+
+Definition at line 862 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8c43f1dcb3057890f5cfc9fe2514dc8c}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8c43f1dcb3057890f5cfc9fe2514dc8c}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getEventsByDate@{getEventsByDate}}
+\index{getEventsByDate@{getEventsByDate}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getEventsByDate()}{getEventsByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Events\+By\+Date (\begin{DoxyParamCaption}\item[{Date}]{date }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{event} }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Events> }
+
+\end{DoxyCode}
+ The events with the specified date. 
+\end{DoxyReturn}
+
+
+Definition at line 413 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a4ca569a7961e7c004ac3f669d915b107}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a4ca569a7961e7c004ac3f669d915b107}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getEventsByWeekAndYear@{getEventsByWeekAndYear}}
+\index{getEventsByWeekAndYear@{getEventsByWeekAndYear}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getEventsByWeekAndYear()}{getEventsByWeekAndYear()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Events\+By\+Week\+And\+Year (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{int}]{year }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{event} }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{week }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{year }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em week} & The week of the event. \\
+\hline
+{\em year} & The year of the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Events> }
+
+\end{DoxyCode}
+ The events with the specified week and year. 
+\end{DoxyReturn}
+
+
+Definition at line 404 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a791a92685dc3fc64cba9dec737fee446}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a791a92685dc3fc64cba9dec737fee446}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getHierarchyByEmployeeId@{getHierarchyByEmployeeId}}
+\index{getHierarchyByEmployeeId@{getHierarchyByEmployeeId}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getHierarchyByEmployeeId()}{getHierarchyByEmployeeId()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Hierarchy\+By\+Employee\+Id (\begin{DoxyParamCaption}\item[{int}]{employee\+\_\+id }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ s
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ s by asking with
+\begin{DoxyCode}{0}
+\DoxyCodeLine{employee\_id }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em employee\+\_\+id} & The Employee ID of the employee. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Role> }
+
+\end{DoxyCode}
+ The roles of the employee. 
+\end{DoxyReturn}
+
+
+Definition at line 880 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1036e6ace1b564f62d4154b214c5d40e}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1036e6ace1b564f62d4154b214c5d40e}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getLunchItemsByDate@{getLunchItemsByDate}}
+\index{getLunchItemsByDate@{getLunchItemsByDate}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getLunchItemsByDate()}{getLunchItemsByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Lunch\+Items\+By\+Date (\begin{DoxyParamCaption}\item[{Date}]{date }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lunch }
+
+\end{DoxyCode}
+ items by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the lunch items. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Lunch> }
+
+\end{DoxyCode}
+ List of all lunch items. 
+\end{DoxyReturn}
+
+
+Definition at line 189 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a84d67dc24fb6ed414e835ad38855cbe3}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a84d67dc24fb6ed414e835ad38855cbe3}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getLunchItemsByWeekAndYear@{getLunchItemsByWeekAndYear}}
+\index{getLunchItemsByWeekAndYear@{getLunchItemsByWeekAndYear}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getLunchItemsByWeekAndYear()}{getLunchItemsByWeekAndYear()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Lunch\+Items\+By\+Week\+And\+Year (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{int}]{year }\end{DoxyParamCaption})}
+
+Method to get all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lunch }
+
+\end{DoxyCode}
+ items by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{week }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{year }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em week} & The week of the lunch items. \\
+\hline
+{\em year} & The year of the lunch items. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Lunch> }
+
+\end{DoxyCode}
+ List of all lunch items. 
+\end{DoxyReturn}
+
+
+Definition at line 199 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a810a76a319b393b25ceb463b3ee1646d}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a810a76a319b393b25ceb463b3ee1646d}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getOrdersByDate@{getOrdersByDate}}
+\index{getOrdersByDate@{getOrdersByDate}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getOrdersByDate()}{getOrdersByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Orders\+By\+Date (\begin{DoxyParamCaption}\item[{Date}]{date }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the order. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Orders> }
+
+\end{DoxyCode}
+ The orders with the specified date. 
+\end{DoxyReturn}
+
+
+Definition at line 468 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a63ceae41c8b1951c25e660d91c9a39f1}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a63ceae41c8b1951c25e660d91c9a39f1}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getOrdersById@{getOrdersById}}
+\index{getOrdersById@{getOrdersById}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getOrdersById()}{getOrdersById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Orders\+By\+Id (\begin{DoxyParamCaption}\item[{Integer}]{id }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{id} }
+
+\end{DoxyCode}
+ . If the ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the order. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ The order. 
+\end{DoxyReturn}
+
+
+Definition at line 458 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7d703a549e9454e87673c9b6b1773f1a}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7d703a549e9454e87673c9b6b1773f1a}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getOrdersByStatus@{getOrdersByStatus}}
+\index{getOrdersByStatus@{getOrdersByStatus}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getOrdersByStatus()}{getOrdersByStatus()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Orders\+By\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_orders_1_1_status}{Orders.\+Status}}}]{status }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{status }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em status} & The status of the order. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Orders> }
+
+\end{DoxyCode}
+ The orders with the specified status. 
+\end{DoxyReturn}
+
+
+Definition at line 477 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_acf97745bd35f186d0aa6e783d0166805}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_acf97745bd35f186d0aa6e783d0166805}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getPersonByEmail@{getPersonByEmail}}
+\index{getPersonByEmail@{getPersonByEmail}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getPersonByEmail()}{getPersonByEmail()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Person\+By\+Email (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{person }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{email }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em email} & The email of the person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ The person. Or if the email is invalid, an exception is thrown. 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa1d79335b563bef52a991d872d0f5ded}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_aa1d79335b563bef52a991d872d0f5ded}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getPersonByPhoneNumber@{getPersonByPhoneNumber}}
+\index{getPersonByPhoneNumber@{getPersonByPhoneNumber}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getPersonByPhoneNumber()}{getPersonByPhoneNumber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Person\+By\+Phone\+Number (\begin{DoxyParamCaption}\item[{String}]{phone\+Number }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{person }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{phoneNumber }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em phone\+Number} & The phone number of the person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ The person. Or if the phone number is invalid, an exception is thrown. 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_ad0db768afa2983a36cfc2dfcbc129416}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_ad0db768afa2983a36cfc2dfcbc129416}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getRoleById@{getRoleById}}
+\index{getRoleById@{getRoleById}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getRoleById()}{getRoleById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Role\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{role }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{id} }
+
+\end{DoxyCode}
+ . If the ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the role. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ The role. 
+\end{DoxyReturn}
+
+
+Definition at line 974 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_afc91d067bcf5972c000b8a6562e8f2c4}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_afc91d067bcf5972c000b8a6562e8f2c4}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getTabByDate@{getTabByDate}}
+\index{getTabByDate@{getTabByDate}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getTabByDate()}{getTabByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Tab\+By\+Date (\begin{DoxyParamCaption}\item[{Timestamp}]{date }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tab }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tab> }
+
+\end{DoxyCode}
+ The tabs with the specified date. 
+\end{DoxyReturn}
+
+
+Definition at line 648 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a73d84fc698d9e078da6fadc0c14d3b0a}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a73d84fc698d9e078da6fadc0c14d3b0a}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getTabById@{getTabById}}
+\index{getTabById@{getTabById}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getTabById()}{getTabById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Tab\+By\+Id (\begin{DoxyParamCaption}\item[{Integer}]{id }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tab }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{id} }
+
+\end{DoxyCode}
+ . If the ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ The tab. 
+\end{DoxyReturn}
+
+
+Definition at line 638 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac9441a42035262b7358f56a732167c67}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac9441a42035262b7358f56a732167c67}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getTabByStatus@{getTabByStatus}}
+\index{getTabByStatus@{getTabByStatus}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getTabByStatus()}{getTabByStatus()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Tab\+By\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_tab_1_1_status}{Tab.\+Status}}}]{status }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tab }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{status }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em status} & The status of the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tab> }
+
+\end{DoxyCode}
+ The tabs with the specified status. 
+\end{DoxyReturn}
+
+
+Definition at line 657 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0fd692720f72ced68e5ecbd81032f67d}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a0fd692720f72ced68e5ecbd81032f67d}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getTabByTable@{getTabByTable}}
+\index{getTabByTable@{getTabByTable}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getTabByTable()}{getTabByTable()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Tab\+By\+Table (\begin{DoxyParamCaption}\item[{Integer}]{table }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tab }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{table }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em table} & The table of the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tab> }
+
+\end{DoxyCode}
+ The tabs with the specified table. 
+\end{DoxyReturn}
+
+
+Definition at line 666 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8abb52f229dddfbf80290f626fa7b4ce}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a8abb52f229dddfbf80290f626fa7b4ce}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getTableById@{getTableById}}
+\index{getTableById@{getTableById}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getTableById()}{getTableById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Table\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{table }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{id} }
+
+\end{DoxyCode}
+ . If the ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tables }
+
+\end{DoxyCode}
+ The table. 
+\end{DoxyReturn}
+
+
+Definition at line 796 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a3af864e19a5632467aa92d1f3e8eee3d}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a3af864e19a5632467aa92d1f3e8eee3d}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!getTablesByNumberOfSeats@{getTablesByNumberOfSeats}}
+\index{getTablesByNumberOfSeats@{getTablesByNumberOfSeats}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{getTablesByNumberOfSeats()}{getTablesByNumberOfSeats()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}}$>$ se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+get\+Tables\+By\+Number\+Of\+Seats (\begin{DoxyParamCaption}\item[{int}]{room\+\_\+for\+\_\+people }\end{DoxyParamCaption})}
+
+Method to get a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{table }
+
+\end{DoxyCode}
+ by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{room\_for\_people }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+for\+\_\+people} & The room\+\_\+for\+\_\+people of the table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tables> }
+
+\end{DoxyCode}
+ The tables with the specified room\+\_\+for\+\_\+people. 
+\end{DoxyReturn}
+
+
+Definition at line 806 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_ad1acc9d3f8a9faeca9673c894ed92443}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_ad1acc9d3f8a9faeca9673c894ed92443}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!updateBookingStatus@{updateBookingStatus}}
+\index{updateBookingStatus@{updateBookingStatus}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{updateBookingStatus()}{updateBookingStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+update\+Booking\+Status (\begin{DoxyParamCaption}\item[{Integer}]{id,  }\item[{\mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_bookings_1_1_status}{Bookings.\+Status}}}]{status }\end{DoxyParamCaption})}
+
+Method to update the status of a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{booking }
+
+\end{DoxyCode}
+ . It checks if the booking exists before updating. Else an exception is thrown with a proper error message. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the booking. \\
+\hline
+{\em status} & The status of the booking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Bookings }
+
+\end{DoxyCode}
+ The booking. 
+\end{DoxyReturn}
+
+
+Definition at line 353 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac85ad40e980ef3f6dc9c8c9b912a5f8e}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_ac85ad40e980ef3f6dc9c8c9b912a5f8e}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!updateDrinkPrice@{updateDrinkPrice}}
+\index{updateDrinkPrice@{updateDrinkPrice}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{updateDrinkPrice()}{updateDrinkPrice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+update\+Drink\+Price (\begin{DoxyParamCaption}\item[{int}]{drink\+Id,  }\item[{Integer}]{price }\end{DoxyParamCaption})}
+
+Method to update the price of a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{drink }
+
+\end{DoxyCode}
+ . If the drink ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em drink\+Id} & The ID of the drink. \\
+\hline
+{\em price} & The price of the drink. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drinks }
+
+\end{DoxyCode}
+ The drink. 
+\end{DoxyReturn}
+
+
+Definition at line 757 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a6d61776eb1933ba9d6074394c6235289}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a6d61776eb1933ba9d6074394c6235289}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!updateEmployeePassword@{updateEmployeePassword}}
+\index{updateEmployeePassword@{updateEmployeePassword}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{updateEmployeePassword()}{updateEmployeePassword()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+update\+Employee\+Password (\begin{DoxyParamCaption}\item[{int}]{employee\+Id,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+Method to update the password of an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{employee }
+
+\end{DoxyCode}
+ . If the employee ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em employee\+Id} & The ID of the employee. \\
+\hline
+{\em password} & The new password string to set as the password. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ The employee. 
+\end{DoxyReturn}
+
+
+Definition at line 918 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1c051e3df7c89273d746be4bb8dcd37e}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a1c051e3df7c89273d746be4bb8dcd37e}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!updateOrderNote@{updateOrderNote}}
+\index{updateOrderNote@{updateOrderNote}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{updateOrderNote()}{updateOrderNote()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+update\+Order\+Note (\begin{DoxyParamCaption}\item[{int}]{order\+Id,  }\item[{String}]{note }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{note }
+
+\end{DoxyCode}
+ to an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ . If the order ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & The ID of the order. \\
+\hline
+{\em note} & The note to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ The order. 
+\end{DoxyReturn}
+
+
+Definition at line 563 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7520abd73b97806e388b0d84fee99c75}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a7520abd73b97806e388b0d84fee99c75}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!updateOrderStatus@{updateOrderStatus}}
+\index{updateOrderStatus@{updateOrderStatus}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{updateOrderStatus()}{updateOrderStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+update\+Order\+Status (\begin{DoxyParamCaption}\item[{int}]{order\+Id,  }\item[{\mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_orders_1_1_status}{Orders.\+Status}}}]{status }\end{DoxyParamCaption})}
+
+Method to add a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{note }
+
+\end{DoxyCode}
+ to an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ . If the order ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & The ID of the order. \\
+\hline
+{\em status} & The status of the order. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ The order. 
+\end{DoxyReturn}
+
+
+Definition at line 549 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a103de7d7d8acc72e61ef5c5ae10aa048}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a103de7d7d8acc72e61ef5c5ae10aa048}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!updateRoleHierarchy@{updateRoleHierarchy}}
+\index{updateRoleHierarchy@{updateRoleHierarchy}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{updateRoleHierarchy()}{updateRoleHierarchy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+update\+Role\+Hierarchy (\begin{DoxyParamCaption}\item[{int}]{role\+Id,  }\item[{Integer}]{hierarchy\+Level }\end{DoxyParamCaption})}
+
+Method to update the hierarchy level of a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{role }
+
+\end{DoxyCode}
+ . If the role ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em role\+Id} & The ID of the role. \\
+\hline
+{\em hierarchy\+Level} & The new hierarchy level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ The role. 
+\end{DoxyReturn}
+
+
+Definition at line 996 of file Database\+Service.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1service_1_1_database_service_a537c64ca2e0b943dbd39022cfbd922da}\label{classse_1_1antons__skafferi_1_1service_1_1_database_service_a537c64ca2e0b943dbd39022cfbd922da}} 
+\index{se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}!updateTabStatus@{updateTabStatus}}
+\index{updateTabStatus@{updateTabStatus}!se.antons\_skafferi.service.DatabaseService@{se.antons\_skafferi.service.DatabaseService}}
+\doxysubsubsection{\texorpdfstring{updateTabStatus()}{updateTabStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} se.\+antons\+\_\+skafferi.\+service.\+Database\+Service.\+update\+Tab\+Status (\begin{DoxyParamCaption}\item[{int}]{tab\+Id,  }\item[{\mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_tab_1_1_status}{Tab.\+Status}}}]{status }\end{DoxyParamCaption})}
+
+Method to update the status of a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tab }
+
+\end{DoxyCode}
+ . If the tab ID is invalid, an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em tab\+Id} & The ID of the tab. \\
+\hline
+{\em status} & The status of the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ The tab. 
+\end{DoxyReturn}
+
+
+Definition at line 687 of file Database\+Service.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/se/antons\+\_\+skafferi/service/\mbox{\hyperlink{_database_service_8java}{Database\+Service.\+java}}\end{DoxyCompactItemize}

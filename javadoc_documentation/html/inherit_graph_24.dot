@@ -1,0 +1,14 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node38 [label="JpaRepository",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node38 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="se.antons_skafferi.repository.\lDrinkOrderRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_drink_order_repository.html",tooltip=" "];
+  Node38 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="se.antons_skafferi.repository.\lFoodOrderRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_food_order_repository.html",tooltip=" "];
+  Node38 -> Node41 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node41 [label="se.antons_skafferi.repository.\lTabRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository.html",tooltip=" "];
+}

@@ -1,4 +1,3 @@
-// Items.java
 package se.antons_skafferi.dataClass;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;

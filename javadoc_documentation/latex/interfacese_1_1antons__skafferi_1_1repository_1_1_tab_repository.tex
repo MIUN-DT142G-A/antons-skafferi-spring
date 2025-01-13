@@ -1,0 +1,113 @@
+\hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository}{}\doxysection{se.\+antons\+\_\+skafferi.\+repository.\+Tab\+Repository Interface Reference}
+\label{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository}\index{se.antons\_skafferi.repository.TabRepository@{se.antons\_skafferi.repository.TabRepository}}
+
+
+Inheritance diagram for se.\+antons\+\_\+skafferi.\+repository.\+Tab\+Repository\+:
+% FIG 0
+
+
+Collaboration diagram for se.\+antons\+\_\+skafferi.\+repository.\+Tab\+Repository\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} $>$ \mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository_a3f32d8abac837d7a02f4c1d90521faf0}{find\+By\+Opened\+\_\+at}} (Timestamp opened\+\_\+at)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} $>$ \mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository_a98573196e01697e1903944cb6fb2c3d3}{find\+By\+Status}} (Tab.\+Status status)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} $>$ \mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository_aad9a3dfdf4acf016b649167c4688c5bd}{find\+By\+Table\+\_\+number}} (Integer table\+\_\+number)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxysubsection*{\mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository}{Tab\+Repository}}}
+
+This interface is used to communicate with the database regarding tabs. 
+
+Definition at line 14 of file Tab\+Repository.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository_a3f32d8abac837d7a02f4c1d90521faf0}\label{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository_a3f32d8abac837d7a02f4c1d90521faf0}} 
+\index{se.antons\_skafferi.repository.TabRepository@{se.antons\_skafferi.repository.TabRepository}!findByOpened\_at@{findByOpened\_at}}
+\index{findByOpened\_at@{findByOpened\_at}!se.antons\_skafferi.repository.TabRepository@{se.antons\_skafferi.repository.TabRepository}}
+\doxysubsubsection{\texorpdfstring{findByOpened\_at()}{findByOpened\_at()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}$>$ se.\+antons\+\_\+skafferi.\+repository.\+Tab\+Repository.\+find\+By\+Opened\+\_\+at (\begin{DoxyParamCaption}\item[{Timestamp}]{opened\+\_\+at }\end{DoxyParamCaption})}
+
+This method is used to find all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ . \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tab> }
+
+\end{DoxyCode}
+ A list of all tabs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository_a98573196e01697e1903944cb6fb2c3d3}\label{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository_a98573196e01697e1903944cb6fb2c3d3}} 
+\index{se.antons\_skafferi.repository.TabRepository@{se.antons\_skafferi.repository.TabRepository}!findByStatus@{findByStatus}}
+\index{findByStatus@{findByStatus}!se.antons\_skafferi.repository.TabRepository@{se.antons\_skafferi.repository.TabRepository}}
+\doxysubsubsection{\texorpdfstring{findByStatus()}{findByStatus()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}$>$ se.\+antons\+\_\+skafferi.\+repository.\+Tab\+Repository.\+find\+By\+Status (\begin{DoxyParamCaption}\item[{Tab.\+Status}]{status }\end{DoxyParamCaption})}
+
+This method is used to find all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ with a specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{status }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em status} & The status of the tabs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tab> }
+
+\end{DoxyCode}
+ A list of all tabs with the specified status. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository_aad9a3dfdf4acf016b649167c4688c5bd}\label{interfacese_1_1antons__skafferi_1_1repository_1_1_tab_repository_aad9a3dfdf4acf016b649167c4688c5bd}} 
+\index{se.antons\_skafferi.repository.TabRepository@{se.antons\_skafferi.repository.TabRepository}!findByTable\_number@{findByTable\_number}}
+\index{findByTable\_number@{findByTable\_number}!se.antons\_skafferi.repository.TabRepository@{se.antons\_skafferi.repository.TabRepository}}
+\doxysubsubsection{\texorpdfstring{findByTable\_number()}{findByTable\_number()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}$>$ se.\+antons\+\_\+skafferi.\+repository.\+Tab\+Repository.\+find\+By\+Table\+\_\+number (\begin{DoxyParamCaption}\item[{Integer}]{table\+\_\+number }\end{DoxyParamCaption})}
+
+This method is used to find all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ with a specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{table\_number }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em table\+\_\+number} & The table\+\_\+number of the tabs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tab> }
+
+\end{DoxyCode}
+ A list of all tabs with the specified table\+\_\+number. 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/se/antons\+\_\+skafferi/repository/\mbox{\hyperlink{_tab_repository_8java}{Tab\+Repository.\+java}}\end{DoxyCompactItemize}

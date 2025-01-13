@@ -1,0 +1,2548 @@
+\hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller}{}\doxysection{se.\+antons\+\_\+skafferi.\+controller.\+APIController Class Reference}
+\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller}\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+
+
+Collaboration diagram for se.\+antons\+\_\+skafferi.\+controller.\+APIController\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a70d522277c7684c407c0ed9fb11900fc}{get\+All\+Persons}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ad2d15814073ca66d5a51fe2ff74d77ad}{get\+Person\+By\+Email}} (@Path\+Variable String email)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ab130a5921f54fe782894c33c2d2551c3}{get\+Person\+By\+Phone\+Number}} (@Path\+Variable String phone\+Number)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a4c0169c0dbf7c1d4c3bd9c95380cceb1}{create\+Person}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} person)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a9efa5a9912eb9aff18b246134445e1fb}{delete\+Person}} (@Path\+Variable int person\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a79844269ecc5abbc29873ddaf2b0938d}{get\+All\+Items}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a99553c0b761296a4d51879556bd82b83}{add\+Item}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}} item)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af090638f4885c77f60d84110654cc8ed}{delete\+Item}} (@Path\+Variable int item\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a75b07928c09c6496183f8af52439dd23}{get\+All\+Lunch\+Items}} ()
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a406f9e7116c7d6b06532b694b6a7686e}{get\+Lunch\+Items\+By\+Date}} (@Path\+Variable Date date)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a728319a51a0a37db3fcecdf6746c5ec0}{get\+Lunch\+Items\+By\+Week\+And\+Year}} (@Path\+Variable int week, @Path\+Variable int year)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_afd794fec48a3cf7ca37fadf069dfb108}{add\+Lunch\+Item}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} lunch)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5dbd25734a07b3e8987abf168b1aa108}{add\+Items\+To\+Lunch}} (@Path\+Variable Integer lunch\+Id, @Request\+Body List$<$ Integer $>$ item\+Ids)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8dc427cc9978af37d9270902b9c88eeb}{delete\+Lunch\+Item}} (@Path\+Variable int lunch\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8eadc506472f8655d6daaa858a81490a}{get\+All\+Dinner\+Items}} ()
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ad808f2361019c758284dcc46c5bc4aa6}{get\+Dinner\+Items\+By\+Type}} (@Path\+Variable String type)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aa2bbf45da5636b9e0e2c16bef7d25539}{add\+Dinner\+Item}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}} dinner)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5fd466faf95cb5d1735d1b63cd386818}{delete\+Dinner\+Item}} (@Path\+Variable int dinner\+Id)
+\item 
+List$<$?$>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aa74bbfe62f5e9108a869efc784404984}{get\+Bookings}} (@Path\+Variable String type)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a2b86fa8c6fc959ca421440154caeae42}{get\+Bookings\+By\+Date}} (@Path\+Variable Date date)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a652f262c81e3e6338a10ac3aa0e76beb}{get\+Bookings\+By\+Week\+And\+Year}} (@Path\+Variable int week, @Path\+Variable int year)
+\item 
+Response\+Entity$<$?$>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ab2b26d00c4f1e2441fbb427626a5a816}{get\+Confirmed\+Bookings\+By\+Table\+Id\+And\+Date\+Time}} (@Path\+Variable Integer table\+Id, @Path\+Variable String date\+Time)
+\item 
+Response\+Entity$<$?$>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af6ff6e718bb033aca3d785d89fd8f44e}{get\+Confirmed\+Booking\+By\+Person\+Id\+And\+Date}} (@Path\+Variable Integer person\+Id, @Path\+Variable String date)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6d40cff0755b8845e56547b2e3f8359e}{add\+Booking}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} booking)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a95e161759bb63577bf2feb2895d0b778}{update\+Booking\+Status}} (@Path\+Variable Integer id, @Request\+Body \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_bookings_1_1_status}{Bookings.\+Status}} status)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5c38fedae7c75aac452c6337bdc4b8ef}{delete\+Booking}} (@Path\+Variable int booking\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aa4d5dd72c70de4f7341861d0570f3882}{get\+All\+Events}} ()
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a691bfb6941a016a57affb19f8edb2b4c}{get\+Events\+By\+Week\+And\+Year}} (@Path\+Variable int week, @Path\+Variable int year)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6993a9ba5fa9c8be248b309600e0ba3b}{get\+Events\+By\+Date}} (@Path\+Variable Date date)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a25d85fe22a0fda030a721909f61c92d3}{add\+Event}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} event)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a47cc5574dc46abbd8da0020919eefed1}{delete\+Event}} (@Path\+Variable int event\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_abe61eaadac4dbbab6caaf35fcc9cd149}{get\+All\+Orders}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_afc91b0d08ac685671f6574f9de1d64db}{get\+Orders\+By\+Id}} (@Path\+Variable Integer id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aded31df58a8586b7b011b80e2d07015b}{get\+Orders\+By\+Date}} (@Path\+Variable Date date)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a06e245536d180ec9641f4e4337cced03}{get\+Orders\+By\+Status}} (@Path\+Variable \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_orders_1_1_status}{Orders.\+Status}} status)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af4a6d78fb380124d02cf52bae89fe5f5}{create\+Order}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} order)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a806b640027d0e60a7720912b7930bdac}{add\+Menu\+Item\+To\+Order}} (@Path\+Variable int order\+Id, @Request\+Body Integer dinner\+Id)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a9d279b157a040d5fb9ce63ebdef9b903}{add\+Drink\+To\+Order}} (@Path\+Variable int order\+Id, @Request\+Body Integer drink\+Id)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8f7ee6eb467c4dcf2e95ee7f16d6e562}{add\+Status\+To\+Order}} (@Path\+Variable int order\+Id, @Request\+Body \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_orders_1_1_status}{Orders.\+Status}} status)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a796c84a7006f577e75249650e169a907}{update\+Order\+Note}} (@Path\+Variable int order\+Id, @Request\+Body String note)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a4cf7729ac3495785fb6fceefa35cce15}{delete\+Order}} (@Path\+Variable int order\+Id)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aea4799c4ae604af927d67249ab1db665}{delete\+Menu\+Item\+From\+Order}} (@Path\+Variable int food\+Order\+Id)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_adef831a47a9f8d44511a2f5fdd9aab21}{delete\+Drink\+From\+Order}} (@Path\+Variable int order\+Id, @Path\+Variable int drink\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8dafad2d6f6fb1dc229334b0ba0c7142}{get\+All\+Tabs}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_acf6f41242d5c61ca2f4657bbca815ea2}{get\+Tab\+By\+Id}} (@Path\+Variable Integer id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a99e88d75c1ceaa24f335591f2a964433}{get\+Tab\+By\+Date}} (@Path\+Variable String date)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a7ba0e674e510892633980bce4248f960}{get\+Tab\+By\+Status}} (@Path\+Variable \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_tab_1_1_status}{Tab.\+Status}} status)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a719f6a49d323271d5d37841a6495a298}{get\+Tab\+By\+Table}} (@Path\+Variable Integer table)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a4868e5901fa21d1bb5ccf68b2b9f6f2c}{create\+Tab}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} tab)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6f5ceab81a44d3613f1a3a2c69620446}{update\+Tab\+Status}} (@Path\+Variable int tab\+Id, @Request\+Body \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_tab_1_1_status}{Tab.\+Status}} status)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a844bbc276d294dec05b51efe15e3197c}{delete\+Tab}} (@Path\+Variable int tab\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ab49eca660b702f5dde57379885112001}{get\+All\+Drinks}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_adefce0403a95c2f5f14b94e83ebaecbb}{get\+Drink\+By\+Id}} (@Path\+Variable int id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aef5e863160ffa93dc5f9071bac437667}{get\+Drinks\+By\+Type}} (@Path\+Variable String type)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a9a92f3338ba5c6adafd47c11888f4f54}{add\+Drink}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} drink)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a045365550e0e3031ec33cfac1eb72c69}{update\+Drink\+Price}} (@Path\+Variable int drink\+Id, @Request\+Body Integer price)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af40ce7f4bdcc8d515075d31d15a34121}{delete\+Drink}} (@Path\+Variable int drink\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8e3910187bd6bd4d9af8f383a7056264}{get\+All\+Tables}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ae3c97b941a3941ca518248ec5d97886f}{get\+Table\+By\+Id}} (@Path\+Variable int id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a23410485fa308a33dce301eab767a305}{get\+Tables\+By\+Number\+Of\+Seats}} (@Path\+Variable int room\+\_\+for\+\_\+people)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a260b1f6c813e7812993f56180260e422}{add\+Table}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} table)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ac25f0e763ab6f5b7ff02c931ea95f9f5}{delete\+Table}} (@Path\+Variable int table\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a55f54dae1159303583b251f0243b4ec4}{get\+All\+Employees}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a629ce19af7ba459a5bf09c1da1546586}{get\+Employee\+By\+Id}} (@Path\+Variable int id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a7877f37a9354532f8d508b7a767d4db9}{get\+Employees\+By\+Name}} (@Path\+Variable String name)
+\item 
+String \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a21a8f8cb14ef4c0efd421a011ee4deb5}{get\+Employee\+Password\+By\+Email}} (@Path\+Variable String email)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_add41cbc0b1af97ed4ecb8340881119d9}{get\+Hierarchy\+By\+Employee\+Id}} (@Path\+Variable int id)
+\item 
+Response\+Entity$<$?$>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a89ffe29186d78f61a3e0e5a75b3afa21}{create\+Employee}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} employee)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_abfae1afde6f621c46ba8dd26d78c01dc}{change\+Employee\+Password}} (@Path\+Variable int employee\+Id, @Request\+Body String password)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a36c62cca151f3a22fe7568eca27762df}{change\+Employee\+Role}} (@Path\+Variable int employee\+Id, @Path\+Variable int role\+Id)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5fe1ea3383ac5b2b605583935002dd64}{delete\+Employee}} (@Path\+Variable int employee\+Id)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} $>$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a15763eb3ffaecd275b67cbcc574597dc}{get\+All\+Roles}} ()
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a99a7bee095baab2459dc1b9d4b595e47}{get\+Role\+By\+Id}} (@Path\+Variable int id)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ad5c10a601281dc51d403d1606c29230b}{create\+Role}} (@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} role)
+\item 
+\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aee8310ea1f1ec8dbe6d073dc29cc9898}{change\+Role\+Hierarchy}} (@Path\+Variable int role\+Id, @Request\+Body Integer hierarchy\+Level)
+\item 
+void \mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6f63b6638d2909dfe0897c4a3dda517f}{delete\+Role}} (@Path\+Variable int role\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxysubsection*{\mbox{\hyperlink{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller}{APIController}}}
+
+This class is the controller for the API. It handles all the requests and responses for the API. It is responsible for the communication between the frontend and the backend. 
+
+The
+\begin{DoxyCode}{0}
+\DoxyCodeLine{APIController }
+
+\end{DoxyCode}
+ class provides endpoints for managing
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Bookings }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Dinner }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{DrinkOrder }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drinks }
+
+\end{DoxyCode}
+ , 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Events }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{FoodOrder }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Items }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{LunchItems }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Shift }
+
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ , 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tables }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{WorksShift }
+
+\end{DoxyCode}
+ . 
+
+Each endpoint is mapped to a specific URL path and HTTP method. 
+
+The class uses the \mbox{\hyperlink{}{Database\+Service}} to perform CRUD operations on the database. 
+
+\begin{DoxySeeAlso}{See also}
+Database\+Service
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+2025-\/01-\/12 
+\end{DoxySince}
+
+
+Definition at line 41 of file APIController.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6d40cff0755b8845e56547b2e3f8359e}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6d40cff0755b8845e56547b2e3f8359e}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!addBooking@{addBooking}}
+\index{addBooking@{addBooking}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{addBooking()}{addBooking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+add\+Booking (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}}}]{booking }\end{DoxyParamCaption})}
+
+This method creates a new
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Booking }
+
+\end{DoxyCode}
+ in the database. 
+\begin{DoxyParams}{Parameters}
+{\em booking} & The booking parameters to be used to create the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{bookings }
+
+\end{DoxyCode}
+ – The booking that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 352 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aa2bbf45da5636b9e0e2c16bef7d25539}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aa2bbf45da5636b9e0e2c16bef7d25539}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!addDinnerItem@{addDinnerItem}}
+\index{addDinnerItem@{addDinnerItem}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{addDinnerItem()}{addDinnerItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+add\+Dinner\+Item (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}}}]{dinner }\end{DoxyParamCaption})}
+
+This method creates a new
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Dinner }
+
+\end{DoxyCode}
+ in the database. 
+\begin{DoxyParams}{Parameters}
+{\em dinner} & The dinner item to be created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Dinner }
+
+\end{DoxyCode}
+ – The dinner item that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 257 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a9a92f3338ba5c6adafd47c11888f4f54}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a9a92f3338ba5c6adafd47c11888f4f54}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!addDrink@{addDrink}}
+\index{addDrink@{addDrink}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{addDrink()}{addDrink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+add\+Drink (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}}}]{drink }\end{DoxyParamCaption})}
+
+This method creates a new
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drinks }
+
+\end{DoxyCode}
+ in the database. 
+\begin{DoxyParams}{Parameters}
+{\em drink} & The drink parameters to create the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drinks }
+
+\end{DoxyCode}
+ – The drink that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 692 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a9d279b157a040d5fb9ce63ebdef9b903}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a9d279b157a040d5fb9ce63ebdef9b903}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!addDrinkToOrder@{addDrinkToOrder}}
+\index{addDrinkToOrder@{addDrinkToOrder}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{addDrinkToOrder()}{addDrinkToOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+add\+Drink\+To\+Order (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{order\+Id,  }\item[{@Request\+Body Integer}]{drink\+Id }\end{DoxyParamCaption})}
+
+This method adds a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drink }
+
+\end{DoxyCode}
+ to an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Order }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & The ID of the order. \\
+\hline
+{\em drink\+Id} & The ID of the drink. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ – The
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ with the added
+\begin{DoxyCode}{0}
+\DoxyCodeLine{drink }
+
+\end{DoxyCode}
+ . 
+\end{DoxyReturn}
+
+
+Definition at line 508 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a25d85fe22a0fda030a721909f61c92d3}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a25d85fe22a0fda030a721909f61c92d3}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!addEvent@{addEvent}}
+\index{addEvent@{addEvent}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{addEvent()}{addEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+add\+Event (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}}}]{event }\end{DoxyParamCaption})}
+
+This method creates a new
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Event }
+
+\end{DoxyCode}
+ in the database. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The event parameters to use to create the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Events }
+
+\end{DoxyCode}
+ – The event that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 420 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a99553c0b761296a4d51879556bd82b83}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a99553c0b761296a4d51879556bd82b83}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!addItem@{addItem}}
+\index{addItem@{addItem}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{addItem()}{addItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+add\+Item (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}}}]{item }\end{DoxyParamCaption})}
+
+This method creates a new item in the database. 
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to be created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Items }
+
+\end{DoxyCode}
+ The item that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5dbd25734a07b3e8987abf168b1aa108}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5dbd25734a07b3e8987abf168b1aa108}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!addItemsToLunch@{addItemsToLunch}}
+\index{addItemsToLunch@{addItemsToLunch}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{addItemsToLunch()}{addItemsToLunch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+add\+Items\+To\+Lunch (\begin{DoxyParamCaption}\item[{@Path\+Variable Integer}]{lunch\+Id,  }\item[{@Request\+Body List$<$ Integer $>$}]{item\+Ids }\end{DoxyParamCaption})}
+
+This method adds
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Items }
+
+\end{DoxyCode}
+ to a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+ object. 
+\begin{DoxyParams}{Parameters}
+{\em lunch\+Id} & The ID of the lunch item. \\
+\hline
+{\em item\+Ids} & The IDs of the items to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+ – The lunch item with the added items. 
+\end{DoxyReturn}
+
+
+Definition at line 195 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_afd794fec48a3cf7ca37fadf069dfb108}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_afd794fec48a3cf7ca37fadf069dfb108}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!addLunchItem@{addLunchItem}}
+\index{addLunchItem@{addLunchItem}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{addLunchItem()}{addLunchItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+add\+Lunch\+Item (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}}}]{lunch }\end{DoxyParamCaption})}
+
+This method creates a new
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+ in the database. 
+\begin{DoxyParams}{Parameters}
+{\em lunch} & The lunch item to be created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+ – The lunch item that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 184 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a806b640027d0e60a7720912b7930bdac}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a806b640027d0e60a7720912b7930bdac}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!addMenuItemToOrder@{addMenuItemToOrder}}
+\index{addMenuItemToOrder@{addMenuItemToOrder}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{addMenuItemToOrder()}{addMenuItemToOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+add\+Menu\+Item\+To\+Order (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{order\+Id,  }\item[{@Request\+Body Integer}]{dinner\+Id }\end{DoxyParamCaption})}
+
+This method adds a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Dinner }
+
+\end{DoxyCode}
+ item to an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Order }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & The ID of the order. \\
+\hline
+{\em dinner\+Id} & The ID of the
+\begin{DoxyCode}{1}
+\DoxyCodeLine{dinner }
+
+\end{DoxyCode}
+ item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ – The
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ with the added menu item. 
+\end{DoxyReturn}
+
+
+Definition at line 497 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8f7ee6eb467c4dcf2e95ee7f16d6e562}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8f7ee6eb467c4dcf2e95ee7f16d6e562}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!addStatusToOrder@{addStatusToOrder}}
+\index{addStatusToOrder@{addStatusToOrder}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{addStatusToOrder()}{addStatusToOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+add\+Status\+To\+Order (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{order\+Id,  }\item[{@Request\+Body \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_orders_1_1_status}{Orders.\+Status}}}]{status }\end{DoxyParamCaption})}
+
+This method updates the status of an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Order }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & The ID of the order. \\
+\hline
+{\em status} & The status of the order that it should be updated to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ – The
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ with the updated status. 
+\end{DoxyReturn}
+
+
+Definition at line 519 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a260b1f6c813e7812993f56180260e422}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a260b1f6c813e7812993f56180260e422}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!addTable@{addTable}}
+\index{addTable@{addTable}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{addTable()}{addTable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+add\+Table (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}}}]{table }\end{DoxyParamCaption})}
+
+This method creates a new
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tables }
+
+\end{DoxyCode}
+ in the database. 
+\begin{DoxyParams}{Parameters}
+{\em table} & The table parameters to create the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tables }
+
+\end{DoxyCode}
+ – The table that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 759 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_abfae1afde6f621c46ba8dd26d78c01dc}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_abfae1afde6f621c46ba8dd26d78c01dc}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!changeEmployeePassword@{changeEmployeePassword}}
+\index{changeEmployeePassword@{changeEmployeePassword}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{changeEmployeePassword()}{changeEmployeePassword()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+change\+Employee\+Password (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{employee\+Id,  }\item[{@Request\+Body String}]{password }\end{DoxyParamCaption})}
+
+This method changes the password of an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em employee\+Id} & The ID of the employee. \\
+\hline
+{\em password} & The new password of the employee. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ – The employee with the updated password. 
+\end{DoxyReturn}
+
+
+Definition at line 852 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a36c62cca151f3a22fe7568eca27762df}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a36c62cca151f3a22fe7568eca27762df}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!changeEmployeeRole@{changeEmployeeRole}}
+\index{changeEmployeeRole@{changeEmployeeRole}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{changeEmployeeRole()}{changeEmployeeRole()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+change\+Employee\+Role (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{employee\+Id,  }\item[{@Path\+Variable int}]{role\+Id }\end{DoxyParamCaption})}
+
+This method changes the role of an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em employee\+Id} & The ID of the employee. \\
+\hline
+{\em role\+Id} & The ID of the role. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ – The employee with the updated role. 
+\end{DoxyReturn}
+
+
+Definition at line 863 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aee8310ea1f1ec8dbe6d073dc29cc9898}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aee8310ea1f1ec8dbe6d073dc29cc9898}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!changeRoleHierarchy@{changeRoleHierarchy}}
+\index{changeRoleHierarchy@{changeRoleHierarchy}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{changeRoleHierarchy()}{changeRoleHierarchy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+change\+Role\+Hierarchy (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{role\+Id,  }\item[{@Request\+Body Integer}]{hierarchy\+Level }\end{DoxyParamCaption})}
+
+This method changes the hierarchy of a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em role\+Id} & The ID of the role. \\
+\hline
+{\em hierarchy\+Level} & The new hierarchy level of the role. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ – The role with the updated hierarchy. 
+\end{DoxyReturn}
+
+
+Definition at line 920 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a89ffe29186d78f61a3e0e5a75b3afa21}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a89ffe29186d78f61a3e0e5a75b3afa21}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!createEmployee@{createEmployee}}
+\index{createEmployee@{createEmployee}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{createEmployee()}{createEmployee()}}
+{\footnotesize\ttfamily Response\+Entity$<$?$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+create\+Employee (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}}}]{employee }\end{DoxyParamCaption})}
+
+This method creates a new
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ in the database. 
+\begin{DoxyParams}{Parameters}
+{\em employee} & The employee parameters to create the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ – The employee that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 836 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af4a6d78fb380124d02cf52bae89fe5f5}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af4a6d78fb380124d02cf52bae89fe5f5}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!createOrder@{createOrder}}
+\index{createOrder@{createOrder}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{createOrder()}{createOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+create\+Order (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}}}]{order }\end{DoxyParamCaption})}
+
+This method creates a new
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ in the database. 
+\begin{DoxyParams}{Parameters}
+{\em order} & The order parameters to create the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ – The
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 486 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a4c0169c0dbf7c1d4c3bd9c95380cceb1}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a4c0169c0dbf7c1d4c3bd9c95380cceb1}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!createPerson@{createPerson}}
+\index{createPerson@{createPerson}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{createPerson()}{createPerson()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+create\+Person (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}}}]{person }\end{DoxyParamCaption})}
+
+This method creates a new
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ in the database. 
+\begin{DoxyParams}{Parameters}
+{\em person} & The person to be created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ – The person that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ad5c10a601281dc51d403d1606c29230b}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ad5c10a601281dc51d403d1606c29230b}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!createRole@{createRole}}
+\index{createRole@{createRole}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{createRole()}{createRole()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+create\+Role (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}}}]{role }\end{DoxyParamCaption})}
+
+This method creates a new
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ in the database. 
+\begin{DoxyParams}{Parameters}
+{\em role} & The role parameters to create the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ – The role that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 909 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a4868e5901fa21d1bb5ccf68b2b9f6f2c}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a4868e5901fa21d1bb5ccf68b2b9f6f2c}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!createTab@{createTab}}
+\index{createTab@{createTab}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{createTab()}{createTab()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+create\+Tab (\begin{DoxyParamCaption}\item[{@Request\+Body \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}}]{tab }\end{DoxyParamCaption})}
+
+This method creates a new
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ in the database. 
+\begin{DoxyParams}{Parameters}
+{\em tab} & The tab parameters to create the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ – The tab that was created. 
+\end{DoxyReturn}
+
+
+Definition at line 626 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5c38fedae7c75aac452c6337bdc4b8ef}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5c38fedae7c75aac452c6337bdc4b8ef}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteBooking@{deleteBooking}}
+\index{deleteBooking@{deleteBooking}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteBooking()}{deleteBooking()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Booking (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{booking\+Id }\end{DoxyParamCaption})}
+
+This method deletes a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Booking }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em booking\+Id} & The ID of the booking to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 373 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5fd466faf95cb5d1735d1b63cd386818}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5fd466faf95cb5d1735d1b63cd386818}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteDinnerItem@{deleteDinnerItem}}
+\index{deleteDinnerItem@{deleteDinnerItem}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteDinnerItem()}{deleteDinnerItem()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Dinner\+Item (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{dinner\+Id }\end{DoxyParamCaption})}
+
+This method deletes a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Dinner }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em dinner\+Id} & The ID of the dinner item to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 267 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af40ce7f4bdcc8d515075d31d15a34121}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af40ce7f4bdcc8d515075d31d15a34121}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteDrink@{deleteDrink}}
+\index{deleteDrink@{deleteDrink}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteDrink()}{deleteDrink()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Drink (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{drink\+Id }\end{DoxyParamCaption})}
+
+This method deletes a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drink }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em drink\+Id} & The ID of the drink to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 713 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_adef831a47a9f8d44511a2f5fdd9aab21}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_adef831a47a9f8d44511a2f5fdd9aab21}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteDrinkFromOrder@{deleteDrinkFromOrder}}
+\index{deleteDrinkFromOrder@{deleteDrinkFromOrder}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteDrinkFromOrder()}{deleteDrinkFromOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Drink\+From\+Order (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{order\+Id,  }\item[{@Path\+Variable int}]{drink\+Id }\end{DoxyParamCaption})}
+
+This method deletes a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drink }
+
+\end{DoxyCode}
+ from an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Order }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em drink\+Id} & The ID of the order. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 558 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5fe1ea3383ac5b2b605583935002dd64}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a5fe1ea3383ac5b2b605583935002dd64}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteEmployee@{deleteEmployee}}
+\index{deleteEmployee@{deleteEmployee}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteEmployee()}{deleteEmployee()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Employee (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{employee\+Id }\end{DoxyParamCaption})}
+
+This method deletes an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em employee\+Id} & The ID of the employee to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 873 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a47cc5574dc46abbd8da0020919eefed1}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a47cc5574dc46abbd8da0020919eefed1}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteEvent@{deleteEvent}}
+\index{deleteEvent@{deleteEvent}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteEvent()}{deleteEvent()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Event (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{event\+Id }\end{DoxyParamCaption})}
+
+This method deletes an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Event }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em event\+Id} & The ID of the event to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 430 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af090638f4885c77f60d84110654cc8ed}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af090638f4885c77f60d84110654cc8ed}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteItem@{deleteItem}}
+\index{deleteItem@{deleteItem}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteItem()}{deleteItem()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Item (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{item\+Id }\end{DoxyParamCaption})}
+
+This method deletes an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{item }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & The ID of the item to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 137 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8dc427cc9978af37d9270902b9c88eeb}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8dc427cc9978af37d9270902b9c88eeb}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteLunchItem@{deleteLunchItem}}
+\index{deleteLunchItem@{deleteLunchItem}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteLunchItem()}{deleteLunchItem()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Lunch\+Item (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{lunch\+Id }\end{DoxyParamCaption})}
+
+This method deletes a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em lunch\+Id} & The ID of the lunch item to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 205 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aea4799c4ae604af927d67249ab1db665}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aea4799c4ae604af927d67249ab1db665}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteMenuItemFromOrder@{deleteMenuItemFromOrder}}
+\index{deleteMenuItemFromOrder@{deleteMenuItemFromOrder}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteMenuItemFromOrder()}{deleteMenuItemFromOrder()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Menu\+Item\+From\+Order (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{food\+Order\+Id }\end{DoxyParamCaption})}
+
+This method deletes a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Dinner }
+
+\end{DoxyCode}
+ item from an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Order }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em food\+Order\+Id} & The ID of the order. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 549 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a4cf7729ac3495785fb6fceefa35cce15}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a4cf7729ac3495785fb6fceefa35cce15}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteOrder@{deleteOrder}}
+\index{deleteOrder@{deleteOrder}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteOrder()}{deleteOrder()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Order (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{order\+Id }\end{DoxyParamCaption})}
+
+This method deletes an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Order }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & The ID of the order to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 540 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a9efa5a9912eb9aff18b246134445e1fb}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a9efa5a9912eb9aff18b246134445e1fb}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deletePerson@{deletePerson}}
+\index{deletePerson@{deletePerson}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deletePerson()}{deletePerson()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Person (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{person\+Id }\end{DoxyParamCaption})}
+
+This method deletes a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em person\+Id} & The ID of the person to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 101 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6f63b6638d2909dfe0897c4a3dda517f}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6f63b6638d2909dfe0897c4a3dda517f}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteRole@{deleteRole}}
+\index{deleteRole@{deleteRole}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteRole()}{deleteRole()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Role (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{role\+Id }\end{DoxyParamCaption})}
+
+This method deletes a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em role\+Id} & The ID of the role to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 930 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a844bbc276d294dec05b51efe15e3197c}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a844bbc276d294dec05b51efe15e3197c}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteTab@{deleteTab}}
+\index{deleteTab@{deleteTab}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteTab()}{deleteTab()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Tab (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{tab\+Id }\end{DoxyParamCaption})}
+
+This method deletes a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em tab\+Id} & The ID of the tab to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 647 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ac25f0e763ab6f5b7ff02c931ea95f9f5}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ac25f0e763ab6f5b7ff02c931ea95f9f5}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!deleteTable@{deleteTable}}
+\index{deleteTable@{deleteTable}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{deleteTable()}{deleteTable()}}
+{\footnotesize\ttfamily void se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+delete\+Table (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{table\+Id }\end{DoxyParamCaption})}
+
+This method deletes a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Table }
+
+\end{DoxyCode}
+ from the database. 
+\begin{DoxyParams}{Parameters}
+{\em table\+Id} & The ID of the table to be deleted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 769 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8eadc506472f8655d6daaa858a81490a}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8eadc506472f8655d6daaa858a81490a}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getAllDinnerItems@{getAllDinnerItems}}
+\index{getAllDinnerItems@{getAllDinnerItems}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getAllDinnerItems()}{getAllDinnerItems()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+All\+Dinner\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Dinner }
+
+\end{DoxyCode}
+ items in the database. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Dinner> }
+
+\end{DoxyCode}
+ – A list of all dinner items in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 220 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ab49eca660b702f5dde57379885112001}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ab49eca660b702f5dde57379885112001}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getAllDrinks@{getAllDrinks}}
+\index{getAllDrinks@{getAllDrinks}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getAllDrinks()}{getAllDrinks()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+All\+Drinks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drinks }
+
+\end{DoxyCode}
+ in the database. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Drinks> }
+
+\end{DoxyCode}
+ – A list of all drinks in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 662 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a55f54dae1159303583b251f0243b4ec4}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a55f54dae1159303583b251f0243b4ec4}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getAllEmployees@{getAllEmployees}}
+\index{getAllEmployees@{getAllEmployees}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getAllEmployees()}{getAllEmployees()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+All\+Employees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ s in the database. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Employee> }
+
+\end{DoxyCode}
+ – A list of all employees in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 785 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aa4d5dd72c70de4f7341861d0570f3882}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aa4d5dd72c70de4f7341861d0570f3882}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getAllEvents@{getAllEvents}}
+\index{getAllEvents@{getAllEvents}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getAllEvents()}{getAllEvents()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+All\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Events }
+
+\end{DoxyCode}
+ in the database. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Events> }
+
+\end{DoxyCode}
+ – A list of all events in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 388 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a79844269ecc5abbc29873ddaf2b0938d}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a79844269ecc5abbc29873ddaf2b0938d}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getAllItems@{getAllItems}}
+\index{getAllItems@{getAllItems}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getAllItems()}{getAllItems()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_items}{Items}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+All\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns all items in the database. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Items> }
+
+\end{DoxyCode}
+ – A list of all items in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 116 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a75b07928c09c6496183f8af52439dd23}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a75b07928c09c6496183f8af52439dd23}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getAllLunchItems@{getAllLunchItems}}
+\index{getAllLunchItems@{getAllLunchItems}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getAllLunchItems()}{getAllLunchItems()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+All\+Lunch\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lunch }
+
+\end{DoxyCode}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{items }
+
+\end{DoxyCode}
+ in the database. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Lunch> }
+
+\end{DoxyCode}
+ – A list of all lunch items in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 152 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_abe61eaadac4dbbab6caaf35fcc9cd149}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_abe61eaadac4dbbab6caaf35fcc9cd149}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getAllOrders@{getAllOrders}}
+\index{getAllOrders@{getAllOrders}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getAllOrders()}{getAllOrders()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+All\+Orders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ in the database. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Orders> }
+
+\end{DoxyCode}
+ – A list of all orders in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 445 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a70d522277c7684c407c0ed9fb11900fc}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a70d522277c7684c407c0ed9fb11900fc}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getAllPersons@{getAllPersons}}
+\index{getAllPersons@{getAllPersons}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getAllPersons()}{getAllPersons()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+All\+Persons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ s in the database. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Person> }
+
+\end{DoxyCode}
+ – A list of all persons in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a15763eb3ffaecd275b67cbcc574597dc}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a15763eb3ffaecd275b67cbcc574597dc}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getAllRoles@{getAllRoles}}
+\index{getAllRoles@{getAllRoles}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getAllRoles()}{getAllRoles()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+All\+Roles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ s in the database. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Role> }
+
+\end{DoxyCode}
+ – A list of all roles in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 888 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8e3910187bd6bd4d9af8f383a7056264}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8e3910187bd6bd4d9af8f383a7056264}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getAllTables@{getAllTables}}
+\index{getAllTables@{getAllTables}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getAllTables()}{getAllTables()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+All\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tables }
+
+\end{DoxyCode}
+ in the database. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tables> }
+
+\end{DoxyCode}
+ – A list of all tables in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 728 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8dafad2d6f6fb1dc229334b0ba0c7142}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a8dafad2d6f6fb1dc229334b0ba0c7142}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getAllTabs@{getAllTabs}}
+\index{getAllTabs@{getAllTabs}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getAllTabs()}{getAllTabs()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+All\+Tabs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ s in the database. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tab> }
+
+\end{DoxyCode}
+ – A list of all tabs in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 574 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aa74bbfe62f5e9108a869efc784404984}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aa74bbfe62f5e9108a869efc784404984}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getBookings@{getBookings}}
+\index{getBookings@{getBookings}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getBookings()}{getBookings()}}
+{\footnotesize\ttfamily List$<$?$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Bookings (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{type }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Bookings }
+
+\end{DoxyCode}
+ in the database with a specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{type }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of booking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<?> }
+
+\end{DoxyCode}
+ – A list of all bookings in the database. 
+\end{DoxyReturn}
+
+
+Definition at line 283 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a2b86fa8c6fc959ca421440154caeae42}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a2b86fa8c6fc959ca421440154caeae42}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getBookingsByDate@{getBookingsByDate}}
+\index{getBookingsByDate@{getBookingsByDate}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getBookingsByDate()}{getBookingsByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Bookings\+By\+Date (\begin{DoxyParamCaption}\item[{@Path\+Variable Date}]{date }\end{DoxyParamCaption})}
+
+This method returns a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Booking }
+
+\end{DoxyCode}
+ by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the booking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Bookings> }
+
+\end{DoxyCode}
+ – A list of all bookings with the specified date. 
+\end{DoxyReturn}
+
+
+Definition at line 296 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a652f262c81e3e6338a10ac3aa0e76beb}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a652f262c81e3e6338a10ac3aa0e76beb}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getBookingsByWeekAndYear@{getBookingsByWeekAndYear}}
+\index{getBookingsByWeekAndYear@{getBookingsByWeekAndYear}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getBookingsByWeekAndYear()}{getBookingsByWeekAndYear()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Bookings\+By\+Week\+And\+Year (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{week,  }\item[{@Path\+Variable int}]{year }\end{DoxyParamCaption})}
+
+This method returns a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Booking }
+
+\end{DoxyCode}
+ by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Week }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Year }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em week} & The week of the booking. \\
+\hline
+{\em year} & The year of the booking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Bookings> }
+
+\end{DoxyCode}
+ – A list of all bookings with the specified week and year. 
+\end{DoxyReturn}
+
+
+Definition at line 307 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af6ff6e718bb033aca3d785d89fd8f44e}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_af6ff6e718bb033aca3d785d89fd8f44e}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getConfirmedBookingByPersonIdAndDate@{getConfirmedBookingByPersonIdAndDate}}
+\index{getConfirmedBookingByPersonIdAndDate@{getConfirmedBookingByPersonIdAndDate}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getConfirmedBookingByPersonIdAndDate()}{getConfirmedBookingByPersonIdAndDate()}}
+{\footnotesize\ttfamily Response\+Entity$<$?$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Confirmed\+Booking\+By\+Person\+Id\+And\+Date (\begin{DoxyParamCaption}\item[{@Path\+Variable Integer}]{person\+Id,  }\item[{@Path\+Variable String}]{date }\end{DoxyParamCaption})}
+
+This method returns a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Booking }
+
+\end{DoxyCode}
+ by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person ID }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em person\+Id} & The ID of the person. \\
+\hline
+{\em date} & The date of the booking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Bookings }
+
+\end{DoxyCode}
+ – The booking with the specified person ID and date. 
+\end{DoxyReturn}
+
+
+Definition at line 335 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ab2b26d00c4f1e2441fbb427626a5a816}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ab2b26d00c4f1e2441fbb427626a5a816}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getConfirmedBookingsByTableIdAndDateTime@{getConfirmedBookingsByTableIdAndDateTime}}
+\index{getConfirmedBookingsByTableIdAndDateTime@{getConfirmedBookingsByTableIdAndDateTime}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getConfirmedBookingsByTableIdAndDateTime()}{getConfirmedBookingsByTableIdAndDateTime()}}
+{\footnotesize\ttfamily Response\+Entity$<$?$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Confirmed\+Bookings\+By\+Table\+Id\+And\+Date\+Time (\begin{DoxyParamCaption}\item[{@Path\+Variable Integer}]{table\+Id,  }\item[{@Path\+Variable String}]{date\+Time }\end{DoxyParamCaption})}
+
+This method returns a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Booking }
+
+\end{DoxyCode}
+ by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Table ID }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em table\+Id} & The ID of the table. \\
+\hline
+{\em date\+Time} & The date of the booking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Bookings> }
+
+\end{DoxyCode}
+ – A list of all bookings with the specified table ID and date. 
+\end{DoxyReturn}
+
+
+Definition at line 318 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ad808f2361019c758284dcc46c5bc4aa6}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ad808f2361019c758284dcc46c5bc4aa6}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getDinnerItemsByType@{getDinnerItemsByType}}
+\index{getDinnerItemsByType@{getDinnerItemsByType}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getDinnerItemsByType()}{getDinnerItemsByType()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_dinner}{Dinner}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Dinner\+Items\+By\+Type (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{type }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Dinner }
+
+\end{DoxyCode}
+ items by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Type }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the dinner items. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Dinner> }
+
+\end{DoxyCode}
+ – A list of all dinner items with the specified type. 
+\end{DoxyReturn}
+
+
+Definition at line 230 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_adefce0403a95c2f5f14b94e83ebaecbb}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_adefce0403a95c2f5f14b94e83ebaecbb}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getDrinkById@{getDrinkById}}
+\index{getDrinkById@{getDrinkById}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getDrinkById()}{getDrinkById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Drink\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{id }\end{DoxyParamCaption})}
+
+This method returns a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drinks }
+
+\end{DoxyCode}
+ by their
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ID }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the drink. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drinks }
+
+\end{DoxyCode}
+ – The drink with the specified ID. 
+\end{DoxyReturn}
+
+
+Definition at line 672 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aef5e863160ffa93dc5f9071bac437667}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aef5e863160ffa93dc5f9071bac437667}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getDrinksByType@{getDrinksByType}}
+\index{getDrinksByType@{getDrinksByType}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getDrinksByType()}{getDrinksByType()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Drinks\+By\+Type (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{type }\end{DoxyParamCaption})}
+
+This method returns a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drinks }
+
+\end{DoxyCode}
+ by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Type }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the drink. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Drinks> }
+
+\end{DoxyCode}
+ – A list of all drinks with the specified type. 
+\end{DoxyReturn}
+
+
+Definition at line 682 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a629ce19af7ba459a5bf09c1da1546586}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a629ce19af7ba459a5bf09c1da1546586}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getEmployeeById@{getEmployeeById}}
+\index{getEmployeeById@{getEmployeeById}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getEmployeeById()}{getEmployeeById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Employee\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{id }\end{DoxyParamCaption})}
+
+This method returns an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ by their
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ID }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the employee. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ – The employee with the specified ID. 
+\end{DoxyReturn}
+
+
+Definition at line 795 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a21a8f8cb14ef4c0efd421a011ee4deb5}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a21a8f8cb14ef4c0efd421a011ee4deb5}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getEmployeePasswordByEmail@{getEmployeePasswordByEmail}}
+\index{getEmployeePasswordByEmail@{getEmployeePasswordByEmail}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getEmployeePasswordByEmail()}{getEmployeePasswordByEmail()}}
+{\footnotesize\ttfamily String se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Employee\+Password\+By\+Email (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{email }\end{DoxyParamCaption})}
+
+This method returns an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ by their
+\begin{DoxyCode}{0}
+\DoxyCodeLine{email }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em email} & The
+\begin{DoxyCode}{1}
+\DoxyCodeLine{email }
+
+\end{DoxyCode}
+ of the
+\begin{DoxyCode}{1}
+\DoxyCodeLine{employee }
+
+\end{DoxyCode}
+ . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ – The employee with the specified
+\begin{DoxyCode}{0}
+\DoxyCodeLine{email }
+
+\end{DoxyCode}
+ . 
+\end{DoxyReturn}
+
+
+Definition at line 815 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a7877f37a9354532f8d508b7a767d4db9}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a7877f37a9354532f8d508b7a767d4db9}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getEmployeesByName@{getEmployeesByName}}
+\index{getEmployeesByName@{getEmployeesByName}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getEmployeesByName()}{getEmployeesByName()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_employee}{Employee}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Employees\+By\+Name (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{name }\end{DoxyParamCaption})}
+
+This method returns
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ s by their
+\begin{DoxyCode}{0}
+\DoxyCodeLine{name }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the employees. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Employee> }
+
+\end{DoxyCode}
+ – The employees with the specified name. 
+\end{DoxyReturn}
+
+
+Definition at line 805 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6993a9ba5fa9c8be248b309600e0ba3b}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6993a9ba5fa9c8be248b309600e0ba3b}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getEventsByDate@{getEventsByDate}}
+\index{getEventsByDate@{getEventsByDate}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getEventsByDate()}{getEventsByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Events\+By\+Date (\begin{DoxyParamCaption}\item[{@Path\+Variable Date}]{date }\end{DoxyParamCaption})}
+
+This method returns an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Event }
+
+\end{DoxyCode}
+ by specified
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Events> }
+
+\end{DoxyCode}
+ – The events with the specified date. 
+\end{DoxyReturn}
+
+
+Definition at line 409 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a691bfb6941a016a57affb19f8edb2b4c}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a691bfb6941a016a57affb19f8edb2b4c}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getEventsByWeekAndYear@{getEventsByWeekAndYear}}
+\index{getEventsByWeekAndYear@{getEventsByWeekAndYear}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getEventsByWeekAndYear()}{getEventsByWeekAndYear()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Events\+By\+Week\+And\+Year (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{week,  }\item[{@Path\+Variable int}]{year }\end{DoxyParamCaption})}
+
+This method returns an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Event }
+
+\end{DoxyCode}
+ by specified
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Week }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Year }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em week} & The week of the event. \\
+\hline
+{\em year} & The year of the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Events> }
+
+\end{DoxyCode}
+ – The events with the specified ID. 
+\end{DoxyReturn}
+
+
+Definition at line 399 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_add41cbc0b1af97ed4ecb8340881119d9}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_add41cbc0b1af97ed4ecb8340881119d9}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getHierarchyByEmployeeId@{getHierarchyByEmployeeId}}
+\index{getHierarchyByEmployeeId@{getHierarchyByEmployeeId}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getHierarchyByEmployeeId()}{getHierarchyByEmployeeId()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Hierarchy\+By\+Employee\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{id }\end{DoxyParamCaption})}
+
+This method returns an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Employee }
+
+\end{DoxyCode}
+ s by their
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{id} }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em id} & The
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\textcolor{keywordtype}{id} }
+
+\end{DoxyCode}
+ of the
+\begin{DoxyCode}{1}
+\DoxyCodeLine{employee }
+
+\end{DoxyCode}
+ . \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Role> }
+
+\end{DoxyCode}
+ – The hierarchy of the employee with the specified
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{id} }
+
+\end{DoxyCode}
+ . 
+\end{DoxyReturn}
+
+
+Definition at line 825 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a406f9e7116c7d6b06532b694b6a7686e}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a406f9e7116c7d6b06532b694b6a7686e}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getLunchItemsByDate@{getLunchItemsByDate}}
+\index{getLunchItemsByDate@{getLunchItemsByDate}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getLunchItemsByDate()}{getLunchItemsByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Lunch\+Items\+By\+Date (\begin{DoxyParamCaption}\item[{@Path\+Variable Date}]{date }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Items }
+
+\end{DoxyCode}
+ by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the lunch items. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Lunch> }
+
+\end{DoxyCode}
+ – A list of all lunch items with the specified date. 
+\end{DoxyReturn}
+
+
+Definition at line 162 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a728319a51a0a37db3fcecdf6746c5ec0}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a728319a51a0a37db3fcecdf6746c5ec0}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getLunchItemsByWeekAndYear@{getLunchItemsByWeekAndYear}}
+\index{getLunchItemsByWeekAndYear@{getLunchItemsByWeekAndYear}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getLunchItemsByWeekAndYear()}{getLunchItemsByWeekAndYear()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_lunch}{Lunch}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Lunch\+Items\+By\+Week\+And\+Year (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{week,  }\item[{@Path\+Variable int}]{year }\end{DoxyParamCaption})}
+
+This method returns all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Lunch }
+
+\end{DoxyCode}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Items }
+
+\end{DoxyCode}
+ by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Week }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Year }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em week} & The week of the lunch items. \\
+\hline
+{\em year} & The year of the lunch items. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Lunch> }
+
+\end{DoxyCode}
+ – A list of all lunch items with the specified week and year. 
+\end{DoxyReturn}
+
+
+Definition at line 173 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aded31df58a8586b7b011b80e2d07015b}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_aded31df58a8586b7b011b80e2d07015b}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getOrdersByDate@{getOrdersByDate}}
+\index{getOrdersByDate@{getOrdersByDate}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getOrdersByDate()}{getOrdersByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Orders\+By\+Date (\begin{DoxyParamCaption}\item[{@Path\+Variable Date}]{date }\end{DoxyParamCaption})}
+
+This method returns an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the order. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Orders> }
+
+\end{DoxyCode}
+ – A list of all orders with the specified date. 
+\end{DoxyReturn}
+
+
+Definition at line 465 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_afc91b0d08ac685671f6574f9de1d64db}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_afc91b0d08ac685671f6574f9de1d64db}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getOrdersById@{getOrdersById}}
+\index{getOrdersById@{getOrdersById}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getOrdersById()}{getOrdersById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Orders\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable Integer}]{id }\end{DoxyParamCaption})}
+
+This method returns an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ by their
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ID }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the order. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ – The order with the specified ID. 
+\end{DoxyReturn}
+
+
+Definition at line 455 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a06e245536d180ec9641f4e4337cced03}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a06e245536d180ec9641f4e4337cced03}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getOrdersByStatus@{getOrdersByStatus}}
+\index{getOrdersByStatus@{getOrdersByStatus}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getOrdersByStatus()}{getOrdersByStatus()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Orders\+By\+Status (\begin{DoxyParamCaption}\item[{@Path\+Variable \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_orders_1_1_status}{Orders.\+Status}}}]{status }\end{DoxyParamCaption})}
+
+This method returns an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Status }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em status} & The status of the order. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Orders> }
+
+\end{DoxyCode}
+ – A list of all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{orders }
+
+\end{DoxyCode}
+ with the specified
+\begin{DoxyCode}{0}
+\DoxyCodeLine{status }
+
+\end{DoxyCode}
+ . 
+\end{DoxyReturn}
+
+
+Definition at line 475 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ad2d15814073ca66d5a51fe2ff74d77ad}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ad2d15814073ca66d5a51fe2ff74d77ad}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getPersonByEmail@{getPersonByEmail}}
+\index{getPersonByEmail@{getPersonByEmail}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getPersonByEmail()}{getPersonByEmail()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Person\+By\+Email (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{email }\end{DoxyParamCaption})}
+
+This method returns a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ by their
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ID }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em email} & The Email of the person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ – The person with the specified ID. 
+\end{DoxyReturn}
+
+
+Definition at line 70 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ab130a5921f54fe782894c33c2d2551c3}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ab130a5921f54fe782894c33c2d2551c3}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getPersonByPhoneNumber@{getPersonByPhoneNumber}}
+\index{getPersonByPhoneNumber@{getPersonByPhoneNumber}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getPersonByPhoneNumber()}{getPersonByPhoneNumber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_person}{Person}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Person\+By\+Phone\+Number (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{phone\+Number }\end{DoxyParamCaption})}
+
+This method returns a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ by their
+\begin{DoxyCode}{0}
+\DoxyCodeLine{phone\_number }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em phone\+Number} & The phone number of the person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Person }
+
+\end{DoxyCode}
+ – The person with the specified phone number. 
+\end{DoxyReturn}
+
+
+Definition at line 80 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a99a7bee095baab2459dc1b9d4b595e47}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a99a7bee095baab2459dc1b9d4b595e47}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getRoleById@{getRoleById}}
+\index{getRoleById@{getRoleById}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getRoleById()}{getRoleById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_role}{Role}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Role\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{id }\end{DoxyParamCaption})}
+
+This method returns a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ by their
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ID }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the role. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Role }
+
+\end{DoxyCode}
+ – The role with the specified ID. 
+\end{DoxyReturn}
+
+
+Definition at line 898 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a99e88d75c1ceaa24f335591f2a964433}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a99e88d75c1ceaa24f335591f2a964433}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getTabByDate@{getTabByDate}}
+\index{getTabByDate@{getTabByDate}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getTabByDate()}{getTabByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Tab\+By\+Date (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{date }\end{DoxyParamCaption})}
+
+This method returns
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ s by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tab> }
+
+\end{DoxyCode}
+ – A list of all tabs with the specified date. 
+\end{DoxyReturn}
+
+
+Definition at line 594 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_acf6f41242d5c61ca2f4657bbca815ea2}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_acf6f41242d5c61ca2f4657bbca815ea2}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getTabById@{getTabById}}
+\index{getTabById@{getTabById}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getTabById()}{getTabById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Tab\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable Integer}]{id }\end{DoxyParamCaption})}
+
+This method returns a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ by their
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ID }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ – The tab with the specified ID. 
+\end{DoxyReturn}
+
+
+Definition at line 584 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a7ba0e674e510892633980bce4248f960}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a7ba0e674e510892633980bce4248f960}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getTabByStatus@{getTabByStatus}}
+\index{getTabByStatus@{getTabByStatus}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getTabByStatus()}{getTabByStatus()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Tab\+By\+Status (\begin{DoxyParamCaption}\item[{@Path\+Variable \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_tab_1_1_status}{Tab.\+Status}}}]{status }\end{DoxyParamCaption})}
+
+This method returns
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ s by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Status }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em status} & The status of the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tab> }
+
+\end{DoxyCode}
+ – A list of all tabs with the specified status. 
+\end{DoxyReturn}
+
+
+Definition at line 605 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a719f6a49d323271d5d37841a6495a298}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a719f6a49d323271d5d37841a6495a298}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getTabByTable@{getTabByTable}}
+\index{getTabByTable@{getTabByTable}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getTabByTable()}{getTabByTable()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Tab\+By\+Table (\begin{DoxyParamCaption}\item[{@Path\+Variable Integer}]{table }\end{DoxyParamCaption})}
+
+This method returns
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ s by specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Table }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em table} & The table of the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Tab> }
+
+\end{DoxyCode}
+ – A list of all tabs with the specified table. 
+\end{DoxyReturn}
+
+
+Definition at line 615 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ae3c97b941a3941ca518248ec5d97886f}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_ae3c97b941a3941ca518248ec5d97886f}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getTableById@{getTableById}}
+\index{getTableById@{getTableById}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getTableById()}{getTableById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Table\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{id }\end{DoxyParamCaption})}
+
+This method returns a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tables }
+
+\end{DoxyCode}
+ by their
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ID }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tables }
+
+\end{DoxyCode}
+ – The table with the specified ID. 
+\end{DoxyReturn}
+
+
+Definition at line 738 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a23410485fa308a33dce301eab767a305}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a23410485fa308a33dce301eab767a305}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!getTablesByNumberOfSeats@{getTablesByNumberOfSeats}}
+\index{getTablesByNumberOfSeats@{getTablesByNumberOfSeats}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{getTablesByNumberOfSeats()}{getTablesByNumberOfSeats()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tables}{Tables}}$>$ se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+get\+Tables\+By\+Number\+Of\+Seats (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{room\+\_\+for\+\_\+people }\end{DoxyParamCaption})}
+
+This method returns
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tables }
+
+\end{DoxyCode}
+ by specific seating capacity
+\begin{DoxyCode}{0}
+\DoxyCodeLine{room\_for\_people }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em room\+\_\+for\+\_\+people} & The number of seats at the table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tables }
+
+\end{DoxyCode}
+ – The table with the specified capacity. 
+\end{DoxyReturn}
+
+
+Definition at line 748 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a95e161759bb63577bf2feb2895d0b778}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a95e161759bb63577bf2feb2895d0b778}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!updateBookingStatus@{updateBookingStatus}}
+\index{updateBookingStatus@{updateBookingStatus}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{updateBookingStatus()}{updateBookingStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_bookings}{Bookings}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+update\+Booking\+Status (\begin{DoxyParamCaption}\item[{@Path\+Variable Integer}]{id,  }\item[{@Request\+Body \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_bookings_1_1_status}{Bookings.\+Status}}}]{status }\end{DoxyParamCaption})}
+
+This method updates the status of a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Booking }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the booking. \\
+\hline
+{\em status} & The status of the booking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Bookings }
+
+\end{DoxyCode}
+ – The booking with the updated status. 
+\end{DoxyReturn}
+
+
+Definition at line 363 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a045365550e0e3031ec33cfac1eb72c69}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a045365550e0e3031ec33cfac1eb72c69}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!updateDrinkPrice@{updateDrinkPrice}}
+\index{updateDrinkPrice@{updateDrinkPrice}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{updateDrinkPrice()}{updateDrinkPrice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_drinks}{Drinks}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+update\+Drink\+Price (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{drink\+Id,  }\item[{@Request\+Body Integer}]{price }\end{DoxyParamCaption})}
+
+This method updates the price of a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drink }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em drink\+Id} & The ID of the drink. \\
+\hline
+{\em price} & The price of the drink. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Drinks }
+
+\end{DoxyCode}
+ – The drink with the updated price. 
+\end{DoxyReturn}
+
+
+Definition at line 703 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a796c84a7006f577e75249650e169a907}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a796c84a7006f577e75249650e169a907}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!updateOrderNote@{updateOrderNote}}
+\index{updateOrderNote@{updateOrderNote}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{updateOrderNote()}{updateOrderNote()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_orders}{Orders}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+update\+Order\+Note (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{order\+Id,  }\item[{@Request\+Body String}]{note }\end{DoxyParamCaption})}
+
+This method updates the note of an
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Order }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em order\+Id} & The ID of the order. \\
+\hline
+{\em note} & The note that should be added to the order. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Orders }
+
+\end{DoxyCode}
+ – The
+\begin{DoxyCode}{0}
+\DoxyCodeLine{order }
+
+\end{DoxyCode}
+ with the updated note. 
+\end{DoxyReturn}
+
+
+Definition at line 530 of file APIController.\+java.
+
+\mbox{\Hypertarget{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6f5ceab81a44d3613f1a3a2c69620446}\label{classse_1_1antons__skafferi_1_1controller_1_1_a_p_i_controller_a6f5ceab81a44d3613f1a3a2c69620446}} 
+\index{se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}!updateTabStatus@{updateTabStatus}}
+\index{updateTabStatus@{updateTabStatus}!se.antons\_skafferi.controller.APIController@{se.antons\_skafferi.controller.APIController}}
+\doxysubsubsection{\texorpdfstring{updateTabStatus()}{updateTabStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_tab}{Tab}} se.\+antons\+\_\+skafferi.\+controller.\+APIController.\+update\+Tab\+Status (\begin{DoxyParamCaption}\item[{@Path\+Variable int}]{tab\+Id,  }\item[{@Request\+Body \mbox{\hyperlink{enumse_1_1antons__skafferi_1_1data_class_1_1_tab_1_1_status}{Tab.\+Status}}}]{status }\end{DoxyParamCaption})}
+
+This method updates the status of a
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em tab\+Id} & The ID of the tab. \\
+\hline
+{\em status} & The status of the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Tab }
+
+\end{DoxyCode}
+ – The tab with the updated status. 
+\end{DoxyReturn}
+
+
+Definition at line 637 of file APIController.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/se/antons\+\_\+skafferi/controller/\mbox{\hyperlink{_a_p_i_controller_8java}{APIController.\+java}}\end{DoxyCompactItemize}

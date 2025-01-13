@@ -1,4 +1,3 @@
-// Employee.java
 package se.antons_skafferi.dataClass;
 
 import jakarta.persistence.*;

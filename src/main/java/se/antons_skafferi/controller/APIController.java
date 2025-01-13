@@ -1,4 +1,3 @@
-// APIController.java
 package se.antons_skafferi.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -141,7 +140,7 @@ public class APIController {
 
 
     // ##############################################################################################################
-    // ##################### LUNCH ITEMS ############################################################################
+    // ##################### LUNCH ##################################################################################
     // ##############################################################################################################
 
     // GET ----------------------------------------------------------------------------------------------------------
@@ -209,7 +208,7 @@ public class APIController {
 
 
     // ##############################################################################################################
-    // ##################### DINNER ITEMS ###########################################################################
+    // ##################### DINNER #################################################################################
     // ##############################################################################################################
 
     // GET ----------------------------------------------------------------------------------------------------------
@@ -543,12 +542,12 @@ public class APIController {
     }
 
     /**
-     * This method deletes a {@code Dinner} item from an {@code Order}.
+     * This method deletes a {@code Dinner} from an {@code Order}.
      * @param foodOrderId The ID of the order.
      */
-    @DeleteMapping(path="/orders/menu-item/{foodOrderId}/delete")
-    public void deleteMenuItemFromOrder(@PathVariable int foodOrderId) {
-        databaseService.deleteMenuItemFromOrder(foodOrderId);
+    @DeleteMapping(path="/orders/{orderId}/menu-item/{foodOrderId}/delete")
+    public void deleteMenuItemFromOrder(@PathVariable int orderId, @PathVariable int foodOrderId) {
+        databaseService.deleteMenuItemFromOrder(orderId, foodOrderId);
     }
 
     /**

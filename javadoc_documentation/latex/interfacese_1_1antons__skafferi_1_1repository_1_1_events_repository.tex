@@ -1,0 +1,110 @@
+\hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository}{}\doxysection{se.\+antons\+\_\+skafferi.\+repository.\+Events\+Repository Interface Reference}
+\label{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository}\index{se.antons\_skafferi.repository.EventsRepository@{se.antons\_skafferi.repository.EventsRepository}}
+
+
+Inheritance diagram for se.\+antons\+\_\+skafferi.\+repository.\+Events\+Repository\+:
+% FIG 0
+
+
+Collaboration diagram for se.\+antons\+\_\+skafferi.\+repository.\+Events\+Repository\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} $>$ \mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository_ad210d5d9e58e8f63ac90c758383d2eb7}{find\+All}} ()
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} $>$ \mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository_ab3f751ee746444b395cd451594f1e707}{find\+By\+Week\+And\+Year}} (int week, int year)
+\item 
+List$<$ \mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}} $>$ \mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository_a4e385c36bcbcbe2edacbcd6423d79229}{find\+By\+Date}} (Date date)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxysubsection*{\mbox{\hyperlink{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository}{Events\+Repository}}}
+
+This interface is used to communicate with the database regarding events. 
+
+Definition at line 14 of file Events\+Repository.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository_ad210d5d9e58e8f63ac90c758383d2eb7}\label{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository_ad210d5d9e58e8f63ac90c758383d2eb7}} 
+\index{se.antons\_skafferi.repository.EventsRepository@{se.antons\_skafferi.repository.EventsRepository}!findAll@{findAll}}
+\index{findAll@{findAll}!se.antons\_skafferi.repository.EventsRepository@{se.antons\_skafferi.repository.EventsRepository}}
+\doxysubsubsection{\texorpdfstring{findAll()}{findAll()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}}$>$ se.\+antons\+\_\+skafferi.\+repository.\+Events\+Repository.\+find\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is used to find all events. \begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Events> }
+
+\end{DoxyCode}
+ A list of all events. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository_a4e385c36bcbcbe2edacbcd6423d79229}\label{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository_a4e385c36bcbcbe2edacbcd6423d79229}} 
+\index{se.antons\_skafferi.repository.EventsRepository@{se.antons\_skafferi.repository.EventsRepository}!findByDate@{findByDate}}
+\index{findByDate@{findByDate}!se.antons\_skafferi.repository.EventsRepository@{se.antons\_skafferi.repository.EventsRepository}}
+\doxysubsubsection{\texorpdfstring{findByDate()}{findByDate()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}}$>$ se.\+antons\+\_\+skafferi.\+repository.\+Events\+Repository.\+find\+By\+Date (\begin{DoxyParamCaption}\item[{Date}]{date }\end{DoxyParamCaption})}
+
+This method is used to find all
+\begin{DoxyCode}{0}
+\DoxyCodeLine{events }
+
+\end{DoxyCode}
+ with a specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{date }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the events. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Events> }
+
+\end{DoxyCode}
+ A list of all events with the specified date. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository_ab3f751ee746444b395cd451594f1e707}\label{interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository_ab3f751ee746444b395cd451594f1e707}} 
+\index{se.antons\_skafferi.repository.EventsRepository@{se.antons\_skafferi.repository.EventsRepository}!findByWeekAndYear@{findByWeekAndYear}}
+\index{findByWeekAndYear@{findByWeekAndYear}!se.antons\_skafferi.repository.EventsRepository@{se.antons\_skafferi.repository.EventsRepository}}
+\doxysubsubsection{\texorpdfstring{findByWeekAndYear()}{findByWeekAndYear()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classse_1_1antons__skafferi_1_1data_class_1_1_events}{Events}}$>$ se.\+antons\+\_\+skafferi.\+repository.\+Events\+Repository.\+find\+By\+Week\+And\+Year (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{int}]{year }\end{DoxyParamCaption})}
+
+This method is used to find all events with a specific
+\begin{DoxyCode}{0}
+\DoxyCodeLine{week }
+
+\end{DoxyCode}
+ and
+\begin{DoxyCode}{0}
+\DoxyCodeLine{year }
+
+\end{DoxyCode}
+ . 
+\begin{DoxyParams}{Parameters}
+{\em week} & The week of the events. \\
+\hline
+{\em year} & The year of the events. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{List<Events> }
+
+\end{DoxyCode}
+ A list of all events with the specified period. 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/se/antons\+\_\+skafferi/repository/\mbox{\hyperlink{_events_repository_8java}{Events\+Repository.\+java}}\end{DoxyCompactItemize}

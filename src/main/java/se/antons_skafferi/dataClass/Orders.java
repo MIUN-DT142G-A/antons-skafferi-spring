@@ -238,6 +238,14 @@ public class Orders {
     }
 
     /**
+     * Method to get the id.
+     * @return order_id
+     */
+    public Object getId() {
+        return order_id;
+    }
+
+    /**
      * Enum to represent the status of the order.
      */
     public enum Status {

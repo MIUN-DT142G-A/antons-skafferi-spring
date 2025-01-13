@@ -1,0 +1,30 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node26 [label="CrudRepository",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node26 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="se.antons_skafferi.repository.\lBookingRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_booking_repository.html",tooltip=" "];
+  Node26 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="se.antons_skafferi.repository.\lDinnerRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_dinner_repository.html",tooltip=" "];
+  Node26 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="se.antons_skafferi.repository.\lDrinksRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_drinks_repository.html",tooltip=" "];
+  Node26 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="se.antons_skafferi.repository.\lEmployeeRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_employee_repository.html",tooltip=" "];
+  Node26 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="se.antons_skafferi.repository.\lEventsRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_events_repository.html",tooltip=" "];
+  Node26 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="se.antons_skafferi.repository.\lItemsRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_items_repository.html",tooltip=" "];
+  Node26 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="se.antons_skafferi.repository.\lLunchRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_lunch_repository.html",tooltip=" "];
+  Node26 -> Node34 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="se.antons_skafferi.repository.\lOrderRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_order_repository.html",tooltip=" "];
+  Node26 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node35 [label="se.antons_skafferi.repository.\lPersonRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_person_repository.html",tooltip=" "];
+  Node26 -> Node36 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 [label="se.antons_skafferi.repository.\lRoleRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_role_repository.html",tooltip=" "];
+  Node26 -> Node37 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node37 [label="se.antons_skafferi.repository.\lTablesRepository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacese_1_1antons__skafferi_1_1repository_1_1_tables_repository.html",tooltip=" "];
+}
